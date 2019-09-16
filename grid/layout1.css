@@ -1,0 +1,61 @@
+#container {
+	max-width: 800px;
+	margin: 0 auto;
+	
+	display: grid;
+	grid-template-columns: 0fr 3fr 1fr;
+    grid-template-rows: 100px max-content max-content ;
+    
+    column-gap: 1em;
+    row-gap
+    
+}
+
+img {
+	width: 100%;
+}
+
+#title {
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+
+}
+
+#menu {
+	grid-column: 1 / 1;
+    grid-row: 0
+
+}  
+
+#login {
+	grid-column: 3 / span 2;
+	grid-row: 3 / span 1 ;
+}
+
+#social{
+    grid-column: 1 / 2;
+    grid-row: 2 ;
+    
+    
+}
+
+#profile{
+    grid-column: 3 / span 1;
+	grid-row: 2/ span 2;
+    
+    
+}
+
+#main {
+   grid-column: 2 / span 1;
+   grid-row: 2 / span 2;
+}
+
+
+body,h1 {font-family: "Verdana", sans-serif }
+body {background-color: #1f1f2e;}
+body {font-size: large;}
+body {text-align: center; }
+body {color: gold  ; }
+body {border-style: dashed
