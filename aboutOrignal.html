@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>about</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <link href="https://fonts.googleapis.com/css?family=McLaren%7cMarck+Script%7cRusso+One" rel="stylesheet">
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
+            authDomain: "mmp-three-fifty.firebaseapp.com",
+            databaseURL: "https://mmp-three-fifty.firebaseio.com",
+            projectId: "mmp-three-fifty",
+            storageBucket: "",
+            messagingSenderId: "29267025222",
+            appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //		firebase.analytics();
+    </script>
+</head>
+
+<style></style>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="header">
+                <div id="logo">
+                    <logo><a href="index.html"><img src="BANNER.png" alt="Banner"></a></logo>
+                </div>
+
+            </div>
+        </header>
+
+        <div id="main">
+            <img src="compost.png" alt="mario">
+
+            <p class="four">
+
+                Welcome to <em>New Chapter Gaming</em>, your <sup>#</sup>1 source for all things gaming and more! We're dedicated in providing you with the very best of the industry. We emphasis on creativity, excellence, and honesty. Founded in 2019 by T. Stokes, <em>New Chapter Gaming</em> has come a long way from its humble beginnings as a simple test site.<p>
+                    <p class="four">We hope you enjoy our content as much as we enjoy offering it to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+
+                    <p> Sincerely,</p>
+
+                    <p class="three">T. Stokes</p>
+
+                    <p class="four">Bonus Game<br><br>
+
+                        <iframe src="https://www.retrogames.cc/embed/16843-super-mario-bros-japan-usa.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe></p>
+
+
+        </div>
+
+        <div id="login">
+
+        </div>
+
+        <div id="user-info">
+            <p id="user-name"></p>
+
+        </div>
+
+        <div id="profile">
+
+            <figure>
+                <figcaption> KiryuDragon
+                    <img src="Kiryu.jpg" alt="man" width="100" height="110"></figcaption>
+            </figure>
+
+            <button>Edit Profile</button>
+            <input id="email" placeholder="Email/Username">
+            <input id="password" placeholder="Password" type="password">
+
+            <button id="login-button">Login</button>
+            <button id="logout-button">Logout</button>
+
+            <p id="login-message"></p>
+
+            <div class="new"><a href="create.html">Create new account</a></div>
+
+            <nav class="topnav" id="myTopnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="users.html">Users</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="sidebar">
+            <img src="delete.gif" alt="man" width="0" height="0">
+
+        </div>
+
+        <div id="social">
+
+            <h2>
+                Quote of the Week
+            </h2>
+            <p class="two">
+                "To live is to choose. But to choose well, you must know who you are and what you stand for, where you want to go and why you want to get there."- Kofi Annan
+
+            </p>
+
+            <h3>
+                Extras...
+            </h3>
+            <ul class="linkedList">
+                <li class="first">
+                    <a href="https://www.brainyquote.com/">Read More Quotes</a></li>
+                <li> <a href="https://www.youtube.com/watch?v=ryi1QBA6XyI">Video of the Week</a>
+                </li>
+                <li class="last">
+                    <a href="#">Top of page</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="copyright">
+        &copy; 2019 T.E.S | Design
+    </div>
+
+    <div id="footer">
+        <div id="footerSidebar">
+            Have something to say?<br>Get in touch with me via the following ways!
+            <ol>
+                <a href="http://www.twitter.com">Twitter</a> -
+                <a href="http://www.facebook.com">Facebook</a> -
+                <a href="http://www.Instagram.com">Instagram</a> -
+                <a href="http://www.LinkedIn.com">LinkedIn</a>
+            </ol>
+
+        </div>
+
+        <script src="js/create.js"></script>
+        <script src="auth.js"></script>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </div>
+
+</body></html>
