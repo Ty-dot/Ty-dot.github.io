@@ -1,0 +1,14 @@
+@import "css/layout.css";
+@import "css/auth.css";
+@import "css/menu.css";
+@import "css/create.css";
+@import "css/responsive.css";
+
+
+
+/* Basic Responsive Images and Video */
+
+.img {
+    width: 100%;
+
+}

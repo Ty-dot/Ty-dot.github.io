@@ -1,0 +1,13 @@
+#user-info {
+    display: none;
+    text-align: center;
+    align-items: center;
+}
+
+.auth #user-info {
+    display: block;
+}
+
+.auth #login {
+    display: none;
+}

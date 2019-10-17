@@ -1,0 +1,440 @@
+style.css
+/*font*/
+
+@import url('https://fonts.googleapis.com/css?family=Russo+One%7cMcLaren%7Marck+Script');
+
+/* The html and body selectors below set the base font for the entire page */
+
+
+html {
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.3em;
+}
+
+body {
+    background-color: #000000;
+    color: #0CB98e;
+    border-style: dotted;
+    padding: 1px;
+}
+
+#logo {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 0em;
+    font-weight: 0;
+    text-align: center;
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-style: none;
+    text-shadow: -1px 0 #000000, 0 1px darkslategray, 1px 0 #000000, 0 -1px burlywood;
+    text-align: center;
+    font-family: 'Mclaren', cursive;
+    text-transform: capitalize;
+    color: #0CB98e;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    text-shadow: -1px 0 #000000, 0 2px #000000, 1px 0 burlywood, 0 -1px #0CB98e;
+    font-family: 'Mclaren', cursive;
+    text-transform: capitalize;
+    color: burlywood;
+    text-decoration: underline;
+
+}
+
+h3 {
+    font-size: 1.2em;
+    font-style: italic;
+    text-shadow: -1px 0 #000000, 0 2px #000000, 1px 0 #000000, 0 -1px #0CB98e;
+    margin-left: 5px;
+    font-family: 'Mclaren', cursive;
+    text-transform: capitalize;
+    color: burlywood;
+    text-decoration: none;
+
+}
+
+p.one,
+p.four {
+    font-family: 'Mclaren', cursive;
+    font-weight: 200;
+    color: #0CB98e;
+    line-height: 1.3em;
+    font-size: 1.3em;
+    text-indent: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    text-align: left;
+}
+
+p.two {
+    font-family: 'Mclaren', cursive;
+    font-weight: 200;
+    color: #0CB98e;
+    font-style: italic;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    text-indent: 0px;
+    margin-bottom: 50px;
+    margin-left: 3px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+p.three {
+    font-family: 'Marck Script', sans-serif;
+    text-shadow: 0px 1px 0px burlywood;
+    font-size: 1.4em;
+    margin-left: 3px;
+    font-size: 1.5em;
+}
+
+.bonus {
+    text-align: center;
+    align-items: center;
+    font-family: 'Russo One', cursive;
+    font-size: 1.2em;
+    color: #000000;
+
+}
+
+.social {
+    font-family: 'Mclaren', cursive;
+    font-size: 1em;
+    text-align: center;
+    word-spacing: 0px;
+    line-height: 1.2em;
+
+}
+
+.new {
+    font-family: 'Mclaren', cursive;
+    font-weight: 200;
+    color: burlywood;
+    text-decoration: underline;
+    line-height: 1.2em;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+#profile,
+h2 {
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+#create {
+    background: #000000;
+    font-family: 'Mclaren', cursive;
+    border: dotted;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#sidebar {
+    letter-spacing: 0px;
+    font-size: 1.1em;
+
+}
+
+
+.linkedList {
+    font-family: 'Mclaren', cursive;
+    border: dotted;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#copyright {
+    font-family: 'Mclaren', cursive;
+    font-style: none;
+    text-shadow: -1px 0 #000000, 0 2px #000000, 1px 0 burlywood, 0 -1px #0CB98e;
+    text-align: center;
+    color: burlywood;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.0em;
+    font-style: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+
+#footer {
+    font-family: 'McLaren', cursive;
+    font-style: none;
+    border: double;
+    text-align: center;
+    color: #0CB98e;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    font-size: 1.1em;
+    line-height: 0em;
+    letter-spacing: 1px;
+    word-spacing: 30px;
+
+}
+
+.toppage {
+    font-family: 'Russo One', cursive;
+    font-size: .8em;
+    text-align: right;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    margin-right: 3px;
+    word-spacing: 1px;
+}
+
+ul {
+    background: #000000;
+}
+
+
+ol {
+    font-family: 'McLaren', cursive;
+    color: #0CB98e;
+    font-size: 1.1em;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.4em;
+    background: #000000;
+    border: none;
+    list-style: none;
+    counter-reset: li;
+}
+
+ol li::before {
+    content: counter(li);
+    color: #0CB98e;
+    display: inline-block;
+    width: 0em;
+    margin-left: 0em;
+}
+
+li {
+    counter-increment: li;
+}
+
+figcaption {
+    font-family: 'Mclaren', cursive;
+    color: #0CB98e;
+    text-shadow: -1px 0 #0CB98e, 0 1px darkslategray, 1px 0 burlywood, 0 -1px #000000;
+    line-height: 1em;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+figcaption img {
+    float: none;
+    clear: none;
+    margin-top: 6px;
+    border: double #0CB98e 1px;
+}
+
+.map {
+    margin-top: 60px;
+    margin-bottom: 2px;
+
+}
+
+span.highlight {
+    background-color: burlywood;
+}
+
+.img,
+iframe {
+    border-radius: 10px;
+}
+
+.game {
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.quote {
+    border: dotted;
+    text-align: center;
+    margin-top: 33px;
+    padding-bottom: 30px;
+    font-family: 'Mclaren', cursive;
+    font-weight: 200;
+    color: #0CB98e;
+    font-style: none;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+
+}
+
+/* mouse over link*/
+
+a:hover,
+a:active {
+    background-color: silver;
+}
+
+
+a:active {
+    color: #0CB98e;
+}
+
+a {
+    color: burlywood;
+    text-shadow: -1px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -1px #0CB98e;
+    text-decoration: none;
+    font-style: none;
+    text-transform: capitalize;
+}
+
+div {
+    clear: both;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/* Basic Responsive Images and Video */
+
+img,
+video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    font-family: 'Russo One', sans-serif;
+    font-style: none;
+    overflow: hidden;
+    background-color: #0CB98e;
+    letter-spacing: 1px;
+
+}
+
+/* Remove default list styling: remove bullet points from the list and remove default margin */
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav ul li {
+    float: center;
+    text-align: center;
+    border-style: double;
+}
+
+.topnav a {
+    color: burlywood;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 2px 0 #000000, 0 -1px #0CB98e;
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: silver;
+    color: #0CB98e;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+    .topnav li:not(:first-child) {
+        display: none;
+    }
+
+    .topnav li.icon {
+        float: center;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: darkslategray;
+        }
+
+    }
+
+    /*
+  =====================================
+  CSS for <iframe> embedded Google Map
+  =====================================
+*/
+    .mapWrapper {
+        position: relative;
+        /*
+    Do math with the height of your iframe divided by the width, then converted to percent
+    In this example the height is 400 and the width is 600
+    400 / 600 = .66666667
+    which is 66.6666667% */
+        padding-bottom: 100%;
+        height: 0;
+    }
+
+    .mapWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

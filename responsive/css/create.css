@@ -1,0 +1,37 @@
+input,
+button {
+    font-size: 1.1em;
+    font-family: 'Mclaren', sans-serif;
+    border-style: solid;
+    background-color: burlywood; 
+    margin-bottom: 7px;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+input {
+    border-bottom: 2px solid #0cb98e;
+    text-align: center;
+    color: #0cb98e;
+}
+
+button {
+    background: #000000;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #0cb98e;
+    color: burlywood;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 2px 0 #000000, 0 -1px #0cb98e;
+    
+}
+
+#create-account {
+    display: flex;
+    justify-content: space-between;
+}
+
+#create-account input,
+#create-account button {}
