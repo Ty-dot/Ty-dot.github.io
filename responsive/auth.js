@@ -15,13 +15,22 @@ const displayName = document.getElementById("user-name");
 
 firebase.auth().onAuthStateChanged(function (user) {
 
-    if (user) {
-        document.body.classList.add('auth');
-        displayName.textContent = "Welcome, " + user.displayName;
-    } else {
-        document.body.classList.remove('auth');
-        displayName.textContent = "";
-    }
+        if (user) {
+            document.body.classList.add('auth');
+            displayName.textContent = "Welcome, " + userInfo.displayName;
+        });
+
+    const profileButton = document.getElementById("edit-profile"); profileButton.onclick = function () {
+        location.href = "profile.html?uid=" + user.uid;
+    };
+
+
+}
+else {
+    document.body.classList.remove('auth');
+    displayName.textContent = "";
+}
+
 });
 
 /* log out */
@@ -29,10 +38,3 @@ const logoutButton = document.getElementById("logout-button");
 logoutButton.onclick = function () {
     firebase.auth().signOut();
 };
-
-
-
-
-
-
-

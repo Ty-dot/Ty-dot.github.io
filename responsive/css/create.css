@@ -3,7 +3,7 @@ button {
     font-size: 1.1em;
     font-family: 'Mclaren', sans-serif;
     border-style: solid;
-    background-color: burlywood; 
+    background-color: burlywood;
     margin-bottom: 7px;
 }
 
@@ -25,7 +25,7 @@ button {
     border-color: #0cb98e;
     color: burlywood;
     text-shadow: -1px 0 #000000, 0 1px #000000, 2px 0 #000000, 0 -1px #0cb98e;
-    
+
 }
 
 #create-account {
@@ -34,4 +34,6 @@ button {
 }
 
 #create-account input,
-#create-account button {}
+#create-account button {
+    
+}

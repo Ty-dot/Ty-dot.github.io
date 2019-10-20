@@ -5,19 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home Page</title>
+    <title>Profile</title>
 
-    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="style.css" rel="stylesheet" type="text/css" "media screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=McLaren%7cMarck+Script%7cRusso+One" rel="stylesheet">
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
-
-
 
     <script>
         // Your web app's Firebase configuration
@@ -33,52 +34,60 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         //		firebase.analytics();
+
     </script>
 </head>
 
-<style></style>
-
 <body>
     <div id="container">
-
-        <div class="header">
+        <div id="header">
             <div id="logo">
-                 <a href="index.html"><img src="BANNER.png" alt="Banner"></a>
+                <logo><a href="index.html"><img src="BANNER.png" alt="Banner"></a></logo>
             </div>
 
             <div id="main">
-                
-             
+                <img src="compost.png" alt="nyc">
 
-                </p>
+                <div id="main-update">
+
+                    <input id="profile-name" placeholder="Username">
+                    <textarea id="bio" placeholder="Add your bio"></textarea>
+                    <button id="update-profile">Update Profile</button> </div>
+
+                <h4>Check out or leave a Comment!</h4>
+
+
+                <p class="fa-social">
+                    <a href="http://www.skype.com" class="fa fa-skype"></a>
+                    <a href="http://www.rss.com" class="fa fa-rss"></a>
+                    <a href="http://www.vimeo.com" class="fa fa-vimeo"></a></p>
+
             </div>
         </div>
-
-        <div id="login"></div>
-
-        <div id="user-info">
-            <p id="user-name"></p>
-        </div>
-
 
         <div id="profile">
 
             <figure>
-                <figcaption> KiryuDojima15
+                <figcaption> Kiryu
                     <img src="Kiryu.jpg" alt="man" width="100" height="110"></figcaption>
             </figure>
 
-            <button id="edit-profile"Edit Profile</button>
-            <input id="email" placeholder="Email/Username">
-            <input id="password" placeholder="Password" type="password">
+            <button id="Edit Profile">Edit Profile</button>
 
-            <button id="login-button">Login</button>
-            <button id="logout-button">Logout</button>
+            <div id="login">
+                <input id="email" placeholder="Email">
+                <input id="password" placeholder="Password" type="password">
+                <button id="login-button">Login</button>
 
-            <p id="login-message"></p>
+                <p id="login-message"></p>
+            </div>
+
+            <div id="user-info">
+                <p id="user-name"></p>
+                <button id="logout-button">Logout</button>
+            </div>
 
             <div class="new"><a href="create.html">Create new account</a></div>
-
 
             <nav class="topnav" id="myTopnav">
                 <ul>
@@ -90,7 +99,8 @@
                     <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
                 </ul>
             </nav>
-            <img src="giphy%20(1).gif" alt="green" width="0" height="0">
+
+            <img src="mk.gif" alt="party" width="0" height="0">
         </div>
 
         <div id="sidebar">
@@ -122,10 +132,20 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
                 <!-- end .mapWrapper-->
-                
             </div>
-        </div>
 
+            <div class="paypal">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_donations" />
+                    <input type="hidden" name="business" value="tyrelles@yahoo.com" />
+                    <input type="hidden" name="item_name" value="Donate here to support the site" />
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+
+        </div>
     </div>
 
     <div id="copyright">
@@ -135,27 +155,29 @@
     <footer>
         <div id="footer">
             <div class="social"> Have something to say?<br>Get in touch with me via the following ways!</div>
-                <ol>
-                    <a href="http://www.twitter.com">Twitter</a> -
-                    <a href="http://www.facebook.com">Facebook</a> -
-                    <a href="http://www.Instagram.com">Instagram</a> -
-                    <a href="http://www.LinkedIn.com">LinkedIn</a>
-                </ol>
-            
+            <ol>
+                <a href="http://www.twitter.com">Twitter</a> -
+                <a href="http://www.facebook.com">Facebook</a> -
+                <a href="http://www.Instagram.com">Instagram</a> -
+                <a href="http://www.LinkedIn.com">LinkedIn</a>
+            </ol>
             <p class="toppage"><a href="#">Top of page</a></p>
 
-                <script src="js/create.js"></script>
-                <script src="js/auth.js"></script>
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                        if (x.className === "topnav") {
-                            x.className += " responsive";
-                        } else {
-                            x.className = "topnav";
-                        }
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
                     }
-                </script>
+                }
+
+            </script>
         </div>
     </footer>
-</body></html>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

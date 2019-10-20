@@ -16,7 +16,7 @@ body {
     background-color: #000000;
     color: #0CB98e;
     border-style: dotted;
-    padding: 1px;
+    padding: .5px;
 }
 
 #logo {
@@ -42,6 +42,8 @@ h2 {
     font-size: 1.2em;
     font-style: italic;
     text-shadow: -1px 0 #000000, 0 2px #000000, 1px 0 burlywood, 0 -1px #0CB98e;
+    text-align: center;
+    align-items: center;
     font-family: 'Mclaren', cursive;
     text-transform: capitalize;
     color: burlywood;
@@ -58,6 +60,20 @@ h3 {
     text-transform: capitalize;
     color: burlywood;
     text-decoration: none;
+
+}
+
+
+h4 {
+    font-size: 1.2em;
+    font-style: italic;
+    text-shadow: -1px 0 #000000, 0 2px #000000, 1px 0 #000000, 0 -1px #0CB98e;
+    margin-left: 5px;
+    font-family: 'Mclaren', cursive;
+    text-transform: capitalize;
+    color: burlywood;
+    text-decoration: none;
+    text-align: center;
 
 }
 
@@ -93,15 +109,25 @@ p.three {
     text-shadow: 0px 1px 0px burlywood;
     font-size: 1.4em;
     margin-left: 3px;
-    font-size: 1.5em;
 }
 
 .bonus {
     text-align: center;
     align-items: center;
     font-family: 'Russo One', cursive;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #000000;
+
+}
+
+#main-update {
+    border: dotted;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    word-spacing: 10px;
 
 }
 
@@ -126,18 +152,19 @@ p.three {
 
 }
 
-#profile,
-h2 {
+#profile {
     text-align: center;
     align-items: center;
     padding-bottom: 0px;
 }
 
-#create {
+#create,
+#main-update {
     background: #000000;
     font-family: 'Mclaren', cursive;
     border: dotted;
     text-align: center;
+    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 25px;
 }
@@ -147,7 +174,6 @@ h2 {
     font-size: 1.1em;
 
 }
-
 
 .linkedList {
     font-family: 'Mclaren', cursive;
@@ -245,8 +271,8 @@ figcaption img {
 }
 
 .map {
-    margin-top: 60px;
-    margin-bottom: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 
 }
 
@@ -254,30 +280,74 @@ span.highlight {
     background-color: burlywood;
 }
 
-.img,
+img,
 iframe {
     border-radius: 10px;
 }
 
+.paypal {
+    border-radius: 30px;
+}
+
 .game {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1px;
+}
 
+.fa-social {
+    text-align: center;
+    align-items: center;
+    color: #000000;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+
+.fa-vimeo {
+    background: #45bbff;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 40px;
+}
+
+.paypal {
+    margin-left: 25px;
 }
 
 .quote {
     border: dotted;
     text-align: center;
-    margin-top: 33px;
-    padding-bottom: 30px;
+    margin-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Mclaren', cursive;
     font-weight: 200;
     color: #0CB98e;
     font-style: none;
     line-height: 1.5em;
     font-size: 1.1em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
 
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 /* mouse over link*/
@@ -347,7 +417,7 @@ video {
 .topnav ul li {
     float: center;
     text-align: center;
-    border-style: double;
+    border-style: double;border-radius: 10px;
 }
 
 .topnav a {
@@ -357,7 +427,7 @@ video {
     padding: 12px 18px;
     text-decoration: none;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 /* Change the color of links on hover */

@@ -1,169 +1,117 @@
- @media (max-width: max-content) {
+/* mobile */
 
-     #container {
-         grid-template-columns: 100%;
-     }
+@media (max-width: 414px) {
 
-     #logo {
-         grid-row: 1;
-     }
+    #container {
+        grid-template-columns: 100%;
+    }
 
-     #main {
-         grid-column: 1;
-         grid-row: 2 / span 1;
-     }
+    #logo {
+        grid-row: 1;
+    }
 
-     #profile {
-         grid-column: 1;
-         grid-row: 2;
+    #main {
+        grid-column: 1;
+        grid-row: 2 / span 1;
+    }
 
-     }
-
-     #sidebar {
-         grid-column: 1;
-         grid-row: 3;
-     }
-
-     #map {
-         grid-column: 1;
-         grid-row: 3 / span 1;
-     }
-
-     #social {
-         grid-column: 1;
-         grid-row: 3;
-     }
-
-     #footer {
-         grid-column: 1;
-         grid-row: 4 / span 1;
-     }
-
-     /* create account  */
-     #create-account {
-         flex-wrap: wrap;
-     }
-
-     #create-account input,
-     #create-account button {
-         flex-basis: 100%;
-         margin: 0.5em;
-         font-size: 1.5em;
-     }
- }
-
- /* mobile */
- @media (min-width: 301px) and (max-width: 599px) {
-
-     #container {
-         grid-template-columns: 100%;
-     }
-
-     #logo {
-         grid-column: 2;
-         grid-row: 1/ span 1;
-
-     }
-
-     #main {
-         grid-column: 2;
-         grid-row: 1 / span 1;
-     }
-
-     #profile {
-         grid-column: 1;
-         grid-row: 2 span 1;
-     }
+    #profile {
+        grid-column: 1;
+        grid-row: 2;
+    }
 
 
-     #sidebar {
-         grid-column: 1;
-         grid-row: 3 / span 1;
-     }
+    #sidebar {
+        grid-column: 1;
+        grid-row: 3;
+    }
 
-     #map {
-         grid-column: 1;
-         grid-row: 3 / span 1;
-     }
+    #map {
+        grid-column: 1;
+        grid-row: 3 / span 1;
+    }
 
-     #social {
-         grid-column: 1;
-         grid-row: 3 / span 1;
-     }
+    #social {
+        grid-column: 1;
+        grid-row: 3;
+    }
 
-     #footer {
-         grid-column: 1;
-         grid-row: 4 / span 1;
-     }
+    #footer {
+        grid-column: 1;
+        grid-row: 4 / span 1;
+    }
 
+    /* create account  */
+    #create-account {
+        flex-wrap: wrap;
+    }
 
+    #create-account input,
+    #create-account button {
+        flex-basis: 100%;
+        margin: 0.5em;
+        font-size: 1.5em;
+    }
+}
 
-     /* create account  */
-     #create-account {
-         flex-wrap: wrap;
-     }
+/* tablet */
+@media (min-width: 415px) and (max-width: 800px) {
 
-     #create-account input,
-     #create-account button {
-         flex-basis: 100%;
-         margin: 0.5em;
-         font-size: 1.5em;
-     }
- }
+    #container {
+        grid-template-columns: 100%;
+    }
 
- /* tablet */
- @media (min-width: 601px) and (max-width: 899px) {
+    #logo {
+        grid-row: 1;
+    }
 
-     #container {
-         grid-template-columns: 100%;
-     }
+    #main {
+        grid-column: 2;
+        grid-row: 1;
+    }
 
-     #logo {
-         grid-column: 2;
-         grid-row: 1/ span 1;
-     }
+    #profile {
+        grid-column: 1;
+        grid-row: 2 span 1;
+    }
 
-     #main {
-         grid-column: 2;
-         grid-row: 1 / span 1;
-     }
+    #sidebar {
+        grid-column: 1;
+        grid-row: 3 / span 1;
+    }
 
-     #profile {
-         grid-column: 1;
-         grid-row: 2/ span 1;
-     }
+    #map {
+        grid-column: 1;
+        grid-row: 3 / span 1;
+    }
 
-     #sidebar {
-         grid-column: 1;
-         grid-row: 3 / span 1;
-     }
+    #social {
+        grid-column: 1;
+        grid-row: 3 / span 1;
+    }
 
-     #map {
-         grid-column: 1;
-         grid-row: 3 / span 1;
-     }
-
-     #social {
-         grid-column: 1;
-         grid-row: 3 / span 1;
-     }
-
-     #footer {
-         grid-column: 1;
-         grid-row: 4 / span 1;
-     }
+    #footer {
+        grid-column: 1;
+        grid-row: 4 / span 1;
+    }
 
 
+    /* create account  */
 
-     /* create account  */
-     #create-account {
-         flex-wrap: wrap;
-     }
+    #create-account {
+        flex-wrap: wrap;
+    }
 
-     #create-account input,
-     #create-account button {
-         flex-basis: 100%;
-         margin: 0.5em;
-         font-size: 1.5em;
-     }
- }
+    create-account input {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 30%;
+    }
+
+    #create-account button {
+        width: 200px;
+        margin: 1em;
+    }
+}
+
+/* desktop view - add flex basis rule */
