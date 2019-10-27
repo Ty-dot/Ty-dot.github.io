@@ -1,0 +1,19 @@
+/* global styles */
+@import "css/layout.css";
+@import "css/color.css";
+
+
+/* page styles */
+@import "css/auth.css";
+@import "css/menu.css";
+@import "css/create.css";
+
+
+/* Basic Responsive Images and Video */
+@import "css/responsive.css";
+
+
+
+
+.img {
+    width: 100%; }

@@ -1,0 +1,158 @@
+/*
+	color scheme 3
+	Orange Purple Grey White
+*/
+
+:root {
+	--main-color: #C297E6;
+	--complement: #FF8D54;
+	--accent-one: #E8A768;
+	--accent-two: #E8E8E8;
+	--accent-three: #424040;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
+
+	/* Darkgrey */
+
+}
+*
+
+/*
+	color scheme 2
+	brown lightgreen
+*/
+
+:root {
+	--main-color: #997E63;
+	--complement: #B2FFBF;
+	--accent-one: #FFDEBE;
+	--accent-two: #D9FFE8;
+	--accent-three: #6E5A47;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
+
+	/* Brown */
+
+}
+*
+/* 
+	Color Scheme 1-
+    Gold and Silver
+	
+*/
+
+:root {
+	--main-color: #7F7C83;
+	--complement: #DFDAE6;
+	--accent-one: #BAB6BF;
+	--accent-two: #DBC76E;
+	--accent-three: #000000;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
+
+	/* Black */
+}
+
+* * {
+	color: var(--text-color);
+	background-color: var(--main-bg-color);
+}
+
+
+em,
+u,
+strong {
+	color: var(--complement);
+
+}
+
+.topnav a {
+	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-three), 1px 0 var(--accent-three), 0 -1px var(--complement);
+}
+
+.topnav li {
+	background-color: var(--main-color);
+}
+
+.topnav a:hover {
+
+	color: var(--text-color);
+}
+
+#login,
+#user-info {
+	color: var(--complement);
+}
+
+input {
+	color: var(--accent-three);
+}
+
+
+button {
+	color: var(--accent-two);
+}
+
+a {
+	color: var(--complement);
+	text-shadow: -1px 0 var(--accent-three),
+		0 1px var(--complement),
+		1px 0 var(--accent-three),
+		0 -1px var(--main-color);
+}
+
+#social {
+	background-color: var(--accent-two);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: var(--accent-one);
+}
+
+#logo {
+	color: var(--main-color);
+	text-shadow: 2px 3px 1px var(--accent-two);
+}
+
+#copyright {
+	color: var(--main-color);
+}
+
+figcaption img {
+	color: var(--accent-one);
+}
+
+figcaption {
+	text-shadow: -1px 0 var(--complement), 0 1px var(--accent-one), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+}
+
+a:hover,
+a:active {
+	color: var(--accent-two);
+}
+
+span.highlight {
+	background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-two), 1px 0 var(--accent-three), 0 -1px var(--main-color);
+}
+
+.new {
+	color: var(--main-color);
+}
+
+p.three {
+	text-shadow: 0px .5px 0px var(--main-color);
+}
+
+
