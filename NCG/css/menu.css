@@ -23,8 +23,8 @@ body {
 	margin-bottom: 25px;
 	font-size: 4em;
 	text-align: center;
-	font-style: italic;
-
+	font-style: none;
+    
 }
 
 h1 {
@@ -43,7 +43,7 @@ h2 {
 	align-items: center;
 	font-family: 'Mclaren', cursive;
 	text-transform: capitalize;
-	text-decoration: underline;
+	
 
 }
 
@@ -74,7 +74,6 @@ p.four {
 	font-weight: 200;
 	line-height: 1.4em;
 	font-size: 1.2em;
-	text-indent: 0px;
 	margin-bottom: 5px;
 	margin-left: 0px;
 	text-align: left;
@@ -86,7 +85,6 @@ p.two {
 	font-style: italic;
 	line-height: 1.4em;
 	font-size: 1.2em;
-	text-indent: 0px;
 	margin-bottom: 50px;
 	margin-left: 1px;
 	margin-right: 0px;
@@ -99,10 +97,22 @@ p.three {
 	margin-left: 1px;
 }
 
+p.five {
+	font-family: 'Mclaren', cursive;
+	font-weight: 200;
+	line-height: 1.4em;
+	font-size: 1.1em;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
 p {
 	text-transform: none;
 }
 
+blockquote {
+	text-align: center;
+}
 
 .bonus {
 	text-align: center;
@@ -134,35 +144,105 @@ form {
 	margin-top: 40px;
 }
 
+.publisher {
+	align-items: center;
+
+}
+
+
 .table {
 	font-family: 'Mclaren', cursive;
 	font-size: 1em;
-	text-align: center;
-	align-items: center;
-	padding: 15px;
-	border-collapse: collapse;
+	float: right;
+	clear: left;
 
 }
-p.table2 {
+
+.table img {
+	float: left;
+	clear: right;
+	margin-top: 80px;
+	margin-right: 10px;
+}
+
+.table img.resize {
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.table2 {
 	font-family: 'Mclaren', cursive;
 	font-size: 1em;
-	text-align: center;
-	align-items: center;
-	padding: 1px;
-	border-collapse: collapse;
+	float: right;
+	clear: left;
+}
 
+.table2 img {
+	float: right;
+	clear: left;
+	margin: 40px;
+}
+
+.table2 img.resize {
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.table3 {
+	font-family: 'Mclaren', cursive;
+	font-size: 1em;
+	float: left;
+	clear: right;
+
+}
+
+.table3 img {
+	float: left;
+	clear: right;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+
+.table3 img.resize {
+	max-width: 50%;
+	max-height: 70%;
+}
+
+.table4 {
+	font-family: 'Mclaren', cursive;
+	font-size: 1em;
+	float: right;
+	clear: left;
+
+}
+
+.table4 img {
+	float: right;
+	clear: left;
+	margin-top: 50px;
+
+}
+
+.table4 img.resize {
+	max-width: 50%;
+	max-height: 50%;
 }
 
 td,
 th {
 	border: 1px solid;
-	text-align: center;
-	padding: 5px;
-	width: 200px;
+	text-align: left;
+	margin: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-transform: capitalize;
+	border-collapse: collapse;
+	width: 100px;
 }
 
+
 tr:nth-child(even) {
-	background-color: ;
+	background-color: #ccc;
 
 }
 
@@ -443,7 +523,7 @@ video {
 	font-family: 'Russo One', sans-serif;
 	font-style: none;
 	overflow: hidden;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 
 }
 
@@ -465,8 +545,8 @@ video {
 .topnav ul li {
 	float: center;
 	text-align: center;
-	border-style: double;
-	border-radius: 20px;
+	border-style: dotted;
+	border-radius: 15px;
 }
 
 .topnav a {

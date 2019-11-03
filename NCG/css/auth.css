@@ -7,8 +7,13 @@
 
 .auth #user-info {
     display: block;
+    font-family: 'arial', sans-serif;
+   
 }
 
 .auth #login {
     display: none;
 }
+
+
+antiquewhite

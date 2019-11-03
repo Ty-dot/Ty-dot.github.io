@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /*
 	color scheme 3
 	Orange Purple Grey White
@@ -14,9 +20,9 @@
 
 	/* Darkgrey */
 
-}*
+}
 
-
+*
 /*
 	color scheme 2
 	brown lightgreen
@@ -33,8 +39,9 @@
 
 	/* Brown */
 
-}*
+}
 
+*
 /* 
 	Color Scheme 1-
     Gold and Silver
@@ -53,7 +60,7 @@
 	/* Black */
 }
 
- * {
+* * {
 	color: var(--text-color);
 	background-color: var(--main-bg-color);
 }
@@ -71,7 +78,7 @@ acronym {
 }
 
 .topnav a {
-	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-three), 1px 0 var(--accent-three), 0 -1px var(--complement);
+	text-shadow: -1px 0 var(--main-color), 1px 0 #424040, 1px 0 var(--accent-two), 0 -1px var(--complement);
 }
 
 .topnav li {
@@ -80,7 +87,7 @@ acronym {
 
 .topnav a:hover {
 
-	color: var(--text-color);
+	color: var(--main-color);
 }
 
 #login,
@@ -89,7 +96,16 @@ acronym {
 }
 
 input {
-	color: var(--accent-three);
+    font-family: 'russo one', cursive;
+	color: var(--complement);
+    
+    
+    
+}
+
+::placeholder{
+    color: var(--main-color);
+    font-family: 'russo one', cursive;
 }
 
 
@@ -98,15 +114,15 @@ button {
 }
 
 #logo a {
-	text-shadow: 2px 1px 2px var(--accent-one);
+	text-shadow: -2px 0 var(--main-color), 0 2px #E8E8E8, 0 1px var(--accent-one), 0 -1px #424040;
 }
 
 
 a {
 	color: var(--complement);
 	text-shadow: -1px 0 var(--accent-three),
-		0 1px var(--complement),
-		1px 0 var(--accent-three),
+		1px 0 var(--accent-one),
+		1px 0 var(--accent-two),
 		0 -1px var(--main-color);
 }
 
@@ -132,27 +148,32 @@ figcaption img {
 }
 
 figcaption {
-	text-shadow: -1px 0 var(--complement), 0 1px var(--accent-one), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+	text-shadow: -1px 0 var(--complement), 0 1px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+    
+    
 }
 
 a:hover,
 a:active {
-	color: var(--accent-two);
+	color: var(--main-color);
 }
 
 button:hover,
 button:active {
-	background-color: var(--accent-one);
+	
+    color:var(--main-color);
+    border-color: var(--complement);
 }
 
 span.highlight {
 	background-color: var(--main-color);
+	color: var(--accent-three);
 }
 
 h1,
 h2,
 h3 {
-	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-two), 1px 0 var(--accent-three), 0 -1px var(--main-color);
+	text-shadow: -1px 0 var(--accent-three), 0 .2px var(--accent-two), .1px 0 var(--accent-one), 0 -1px var(--main-color);
 }
 
 .new,
@@ -162,4 +183,18 @@ h3 {
 
 p.three {
 	text-shadow: 0px .5px 0px var(--main-color);
+}
+
+
+textarea {
+	color: var(--complement);
+	background-color: #000000;
+    font-family: 'arial';
+}
+
+
+#login-message,#error-message {
+    font-family: 'arial';
+    color: indianred;
+    
 }

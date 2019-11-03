@@ -1,0 +1,27 @@
+#posts {
+		
+    
+   
+    
+}
+
+
+
+
+.post {
+    font-family: 'arial';
+	
+}
+
+.post .text {
+	color: var(--text-color);
+}
+
+.post .author {
+	color: var(--complement);
+}
+
+.post .date {
+	color: var(--main-color);
+    font-family: 'russo one', cursive;
+}

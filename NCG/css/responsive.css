@@ -137,7 +137,6 @@
 		margin: 30px;
 	}
 
-
 	.boxflex2,
 	.map {
 		margin: 30px;
@@ -147,16 +146,26 @@
 		margin-top: 2px;
 	}
 
-
 	.boxflex2 li {
 		margin-right: 15px;
 	}
 
 	.boxflex p.table,
-	p.table2 {margin: 30px;}
-	
-	
+	p.table2,
+	p.table3,
+	p.table4 {
+		margin: 30px;
+	}
 
+	.publisher {
+		margin: 30px;
+	}
+
+	#create {
+		margin: 30px;
+	}
+
+	
 	/* create account  */
 
 	#create-account {
