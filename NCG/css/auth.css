@@ -7,7 +7,7 @@
 
 .auth #user-info {
     display: block;
-    font-family: 'arial', sans-serif;
+    font-family:var(--serious-font), sans-serif;
    
 }
 

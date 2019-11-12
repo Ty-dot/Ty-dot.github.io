@@ -1,16 +1,12 @@
-#posts {
-		
-    
-   
-    
-}
+#posts {}
 
 
 
 
 .post {
-    font-family: 'arial';
-	
+	font-family: var(--serious-font);
+	border: double;
+
 }
 
 .post .text {
@@ -23,5 +19,11 @@
 
 .post .date {
 	color: var(--main-color);
-    font-family: 'russo one', cursive;
+	font-family: var(--text-font), cursive;
+}
+
+textarea {
+	background-color: #000000;
+	font-family: var(--serious-font);
+
 }

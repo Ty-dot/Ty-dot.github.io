@@ -8,7 +8,7 @@
 	<title>Home Page</title>
 
 	<link href="style.css" rel="stylesheet" type="text/css" media="screen">
-	<link href="https://fonts.googleapis.com/css?family=McLaren%7cMarck+Script%7cRusso+One" rel="stylesheet">
+
 
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
@@ -46,6 +46,7 @@
 
 			<div id="main">
 				<img src="Inuse/Elite.png" alt="The group">
+				<p class="one"><b>Hello and Welcome</b> to <strong>New Chapter Gaming</strong> ! This is a test site for my MMP350 class. I'm just showing some of the techniques and code I have learned. I also will have more here. Maybe some of the information here can be of use to you,and thanks for reading.</p>
 
 				<div class="publisher">
 					<p class="four"><b>Try Publishing A Post Here:</b></p>
@@ -53,30 +54,23 @@
 					<div id="write-post">
 						<p>
 							<textarea id="post-text" placeholder="Compose a new post"></textarea></p>
-						<button id="publish">Publish</button>
-                        <div id="posts"> </div>
-		
+						<button id="publish">Publish Post</button>
+						<div id="posts"> </div>
 
-
-						<p class="one"><b>Hello and Welcome</b> to <strong>New Chapter Gaming</strong> ! This is a test site for my MMP350 class. I'm just showing some of the techniques and code I have learned. I also will have more here. Maybe some of the information here can be of use to you,and thanks for reading.</p>
-
-						<blockquote>
-							<p class="one">
-								What is Lorem Ipsum?
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-						</blockquote>
+					
 
 					</div>
 				</div>
 
 			</div>
 		</div>
+
 		<main class="boxflex">
 			<div id="profile">
 
 				<figure>
-					<figcaption> Kiryu
-						<img src="Inuse/Kiryu.jpg" alt="man" width="100" height="110"></figcaption>
+					<figcaption>Character Of The Week: 
+						<img src="Inuse/Kiryu.jpg" alt="man" width="100" height="110">Kiryu Kazuma</figcaption>
 				</figure>
 
 				<button onclick="window.location.href = 'profile.html';">Edit Profile</button>
@@ -97,17 +91,20 @@
 
 				<nav class="topnav" id="myTopnav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
-						<li><a href="profile.html">Profile</a></li>
 						<li><a href="users.html">Users</a></li>
+						<li><a href="reviews.html">Reviews</a></li>
+						<li><a href="write.html">Write-Up</a></li>
 						<li><a href="support.html">Support</a></li>
+						
+
 						<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
 					</ul>
 				</nav>
 
 				<p class="giphy">
-					<img src="https://thumbs.gfycat.com/RectangularTotalBilby-small.gif" alt="green" width="0" height="0"></p>
+					<img src=Inuse/trip.gif alt="green" width="0" height="0"></p>
 
 
 			</div>
@@ -164,7 +161,7 @@
 	</div>
 	<footer>
 		<div id="footer">
-			<div class="social"> Have something to say?<br>Get in touch with me via the following ways!</div>
+			<div class="social"> <i>Have something to say?</i><br>Get in touch with me via the following ways!</div>
 			<ol>
 				<a href="http://www.twitter.com">Twitter</a> -
 				<a href="http://www.facebook.com">Facebook</a> -
@@ -190,7 +187,7 @@
 
 	<script src="js/auth.js"></script>
 	<script src="js/publish.js"></script>
-        <script src="js/posts.js"></script>
+	<script src="js/posts.js"></script>
 </body>
 
 </html>

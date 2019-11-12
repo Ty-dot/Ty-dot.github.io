@@ -1,12 +1,48 @@
+/*
+	color scheme V-Professional
+	Black Grey and White
+*/
 
 
 
+:root {
+	--main-color: antiquewhite;
+	--complement: #E6E6E6;
+	--accent-one: #808080;
+	--accent-two: #CFCFCF;
+	--accent-three: #000000;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
 
+
+
+}
+
+*
+/*
+	color scheme IV-Cotton Candy
+	lightblue pink grey
+*/
+
+
+
+:root {
+	--main-color: #FFACB5;
+	--complement: #78F7FF;
+	--accent-one: #779CFF;
+	--accent-two: #FFDFCF;
+	--accent-three: #424040;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
+
+
+
+}
 
 
 /*
-	color scheme 3
-	Orange Purple Grey White
+	Color Scheme III-Purple Flame
+	Orange Purple Black White
 */
 
 :root {
@@ -14,36 +50,34 @@
 	--complement: #FF8D54;
 	--accent-one: #E8A768;
 	--accent-two: #E8E8E8;
-	--accent-three: #424040;
+	--accent-three: #1F1F1F;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
 
-	/* Darkgrey */
+
 
 }
 
-*
+
 /*
-	color scheme 2
-	brown lightgreen
+	Color Scheme II-Leaf and Log
+	Teal Lightgreen wood
 */
 
 :root {
-	--main-color: #ffffff;
-	--complement: #B2FFBF;
-	--accent-one: #FFDEBE;
-	--accent-two: #D9FFE8;
-	--accent-three: #6E5A47;
+	--main-color: #FFE0BF;
+	--complement: #B3FFBF;
+	--accent-one: #7bc9b4;
+	--accent-two: #E1BF8C;
+	--accent-three: #000000;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
-
-	/* Brown */
 
 }
 
 *
 /* 
-	Color Scheme 1-
+	Color Scheme I
     Gold and Silver
 	
 */
@@ -57,7 +91,7 @@
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
 
-	/* Black */
+
 }
 
 * * {
@@ -65,15 +99,26 @@
 	background-color: var(--main-bg-color);
 }
 
+sup {
+	color: var(--main-color);
+}
 
 em,
 u,
 b,
 strong,
-sup,
 small,
+cite,
 acronym {
 	color: var(--complement);
+
+}
+
+
+
+
+i {
+	color: var(--accent-one);
 
 }
 
@@ -96,16 +141,13 @@ acronym {
 }
 
 input {
-    font-family: 'russo one', cursive;
+
 	color: var(--complement);
-    
-    
-    
 }
 
-::placeholder{
-    color: var(--main-color);
-    font-family: 'russo one', cursive;
+::placeholder {
+	color: var(--main-color);
+
 }
 
 
@@ -147,10 +189,11 @@ figcaption img {
 	color: var(--accent-one);
 }
 
-figcaption {
+figcaption,
+#reviewlogo {
 	text-shadow: -1px 0 var(--complement), 0 1px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
-    
-    
+
+
 }
 
 a:hover,
@@ -160,9 +203,9 @@ a:active {
 
 button:hover,
 button:active {
-	
-    color:var(--main-color);
-    border-color: var(--complement);
+
+	color: var(--main-color);
+	border-color: var(--complement);
 }
 
 span.highlight {
@@ -188,13 +231,18 @@ p.three {
 
 textarea {
 	color: var(--complement);
-	background-color: #000000;
-    font-family: 'arial';
 }
 
 
-#login-message,#error-message {
-    font-family: 'arial';
-    color: indianred;
-    
+#login-message,
+#error-message {
+	color: indianred;
+}
+
+
+
+#user-name {
+	color: var(--main-color);
+	background-color: var(--accent-three);
+
 }

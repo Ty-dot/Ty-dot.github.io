@@ -1,7 +1,7 @@
 input,
 button {
     font-size: 1.1em;
-    font-family: 'Mclaren', sans-serif;
+    font-family: var(--text-font), sans-serif;
     border-style: double;
     background-color: var(--accent-two);
     margin-bottom: 6px;

@@ -153,7 +153,8 @@
 	.boxflex p.table,
 	p.table2,
 	p.table3,
-	p.table4 {
+	p.table4,
+	p.table5 {
 		margin: 30px;
 	}
 
@@ -165,7 +166,7 @@
 		margin: 30px;
 	}
 
-	
+
 	/* create account  */
 
 	#create-account {

@@ -1,0 +1,408 @@
+/* 3rd typographic hierarchy-Graffiti */
+:root {
+	--display-font: 'Sedgwick Ave Display', cursive;
+	--text-font: 'Mclaren', cursive;
+	--serious-font: 'Helvetica';
+	--link-font: var(--display-font);
+
+}*
+
+
+/* 2nd typographic hierarchy-Fancy */
+:root {
+	--display-font: 'Fugaz One', cursive;
+	--text-font: 'Kalam', cursive;
+	--serious-font: 'verdana';
+	--link-font: var(--display-font);
+
+}*
+
+
+
+/* 1st typographic hierarchy-Blocky */
+:root {
+	--display-font: 'Russo One', serif;
+	--text-font: 'Bai Jamjuree', sans-serif;
+	--serious-font: 'Arial';
+	--link-font: var(--display-font);
+
+}*
+
+
+* body {
+	font-family: var(--text-font);
+}
+
+a {
+	font-family: var(--display-font);
+}
+
+.post {
+	background-color: var(--accent-three);
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+
+.post .text {
+	font-family: var(-serious-font);
+	font-size: 1.5em;
+	line-height: 1.4;
+}
+
+.post .author {
+	display: inline-block;
+	margin-right: 0.25em;
+	color: var(--accent-two);
+	font-weight: 700;
+}
+
+.post .date {
+	display: inline-block;
+}
+
+.post .date::before {
+	content: " on ";
+	color: var(--main-color);
+}
+
+
+#logo {
+	font-family: var(--display-font);
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-size: 4em;
+	text-align: center;
+	font-style: none;
+
+}
+
+#reviewlogo {
+	font-family: var(--display-font);
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 3em;
+	text-align: center;
+	font-style: none;
+
+}
+
+h1 {
+	font-size: 2.00em;
+	font-style: none;
+	text-align: center;
+	font-family: var(--text-font), cursive;
+	text-transform: capitalize;
+
+}
+
+h2 {
+	font-size: 1.2em;
+	font-style: italic;
+	text-align: center;
+	align-items: center;
+	font-family: font-family: var(--text-font), cursive;
+	text-transform: capitalize;
+
+
+}
+
+h3 {
+	font-size: 1.2em;
+	font-style: italic;
+	margin-left: 1px;
+	font-family: var(--text-font), cursive;
+	text-transform: capitalize;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+
+h4 {
+	font-size: 1em;
+	font-style: none;
+	font-family: var(--display-font);
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	word-spacing: 0px;
+}
+
+p.one,
+p.four {
+	font-family: var(--text-font), cursive;
+	font-weight: 200;
+	line-height: 1.4em;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	text-align: left;
+}
+
+p.two {
+	font-family: var(--text-font), cursive;
+	font-weight: 200;
+	font-style: italic;
+	line-height: 1.4em;
+	font-size: 1.2em;
+	margin-bottom: 50px;
+	margin-left: 1px;
+	margin-right: 0px;
+	text-align: left;
+}
+
+p.three {
+	font-family: var(--text-font), sans-serif;
+	font-size: 1.4em;
+	margin-left: 1px;
+}
+
+p.five {
+	font-family: var(--text-font), cursive;
+	font-weight: 200;
+	line-height: 1.4em;
+	font-size: 1.1em;
+	margin-bottom: 5px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+
+
+.bonus {
+	text-align: center;
+	align-items: center;
+	font-family: var(--display-font), cursive;
+	font-size: 1.1em;
+	color: #000000;
+
+}
+
+
+
+form {
+	font-family: var(--text-font) font-size: 1.3em;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 20px;
+	margin-top: 40px;
+}
+
+.authentication {
+	font-family: var(--text-font), cursive;
+	font-weight: 200;
+	line-height: 1.3em;
+	font-size: 1.1em;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	text-align: left;
+}
+
+
+.table {
+	font-family: var(--text-font), cursive;
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: right;
+	clear: left;
+
+}
+
+
+.table2 {
+	font-family: var(--text-font), cursive;
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: right;
+	clear: left;
+}
+
+
+.table3 {
+	font-family: var(--text-font), cursive;
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: left;
+	clear: right;
+
+}
+
+
+.table4 {
+	font-family: var(--text-font), cursive;
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: right;
+	clear: left;
+
+}
+
+.table5 {
+	font-family: var(--text-font), cursive;
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: left;
+	clear: right;
+
+}
+
+
+.social {
+	font-family: var(--text-font);
+	font-size: 1em;
+	text-align: center;
+	word-spacing: 0px;
+
+
+}
+
+.disclaimer {
+	font-family: var(--text-font), cursive;
+	font-size: .9em;
+	text-align: justify;
+	word-spacing: 0px;
+	line-height: 1.2em;
+}
+
+
+.new {
+	font-family: var(--display-font), cursive;
+	font-weight: 200;
+	text-decoration: underline;
+	line-height: 1.4em;
+	font-size: 1.3em;
+	margin-bottom: 30px;
+	margin-top: 20px;
+
+}
+
+#profile {
+	text-align: center;
+	align-items: center;
+
+}
+
+
+
+#create {
+	font-family: var(--text-font), cursive;
+	border: double;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+.linkedList {
+	font-family: var(--display-font), cursive;
+	border: double;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: .2px;
+}
+
+#copyright {
+	font-family: var(--text-font), cursive;
+	font-style: none;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: .9em;
+	font-style: none;
+	line-height: 1.1em;
+	letter-spacing: .2px;
+}
+
+#footer {
+	font-family: var(--text-font), cursive;
+	font-style: none;
+	border: double;
+	text-align: center;
+	margin: 2px;
+	font-size: 1em;
+	letter-spacing: 1px;
+	word-spacing: 25px;
+
+}
+
+.toppage {
+	font-family: var(--text-font), cursive;
+	font-size: .9em;
+	text-align: right;
+	margin-bottom: 9px;
+	margin-top: 2px;
+	margin-right: 11px;
+	word-spacing: 0px;
+}
+
+
+
+ol {
+	font-family: var(--display-text), cursive;
+	font-size: 1.2em;
+	font-weight: 200;
+	text-align: center;
+	line-height: 1.3em;
+	border: none;
+	list-style: none;
+	counter-reset: li;
+	letter-spacing: 0.2px
+}
+
+
+
+figcaption {
+	font-family: var(--text-ffont), cursive;
+	line-height: 1em;
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: 100;
+	letter-spacing: 2px;
+}
+
+
+
+.quote {
+	border: double;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	font-family: var(--text-font), cursive;
+	font-weight: 200;
+	font-style: none;
+	padding-left: 3px;
+	padding-right: 3px;
+	line-height: 1.5em;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+
+
+::placeholder {
+	font-family: var(--display-font), serif;
+
+}
+
+
+#user-name {
+	border: double;
+	font-family: var(--display-font), serif;
+	border-radius: 0em;
+}
+
+
+#login-message,
+#error-message {
+	font-family: var(--serious-font);
+
+
+}
+
+input {
+	font-family: var(--serious-font), cursive;
+
+}
+
+
+i {}
