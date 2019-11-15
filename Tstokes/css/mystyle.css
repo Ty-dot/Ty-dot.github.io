@@ -1,0 +1,770 @@
+/* Edit the CSS below to create your grid.
+   ============================== */
+css/mystyle.css
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Acme%7cKite+One%7cMclaren%7cRusso+One&display=swap"');
+
+img,
+video {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+
+#container {
+	width: 100%;
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 2px;
+
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	column-gap: 1em;
+}
+
+#header,
+.logo {
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 1;
+}
+
+#homeimage {
+	grid-column: 1 / span 1;
+	grid-row: 2;
+}
+
+#aside {
+	grid-column: 2 / span 1;
+	grid-row: 3 /span 1;
+}
+
+#main {
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+}
+
+.map {
+	grid-column: 2 / span 1;
+	grid-row: 4 /span 1;
+}
+
+
+#intro {
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+}
+
+#sidebar {
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+}
+
+#detail {
+	grid-column: 1 / span 2;
+
+}
+
+#footer {
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 2;
+}
+
+
+/* this ends @supports */
+
+
+
+/* mobile */
+@media (max-width: 414px) {
+
+	#container {
+		grid-template-columns: 100%;
+	}
+
+	#header,
+	.logo {
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 1;
+	}
+
+	#homeimage {
+		grid-column: 1 / span 1;
+		grid-row: 2;
+	}
+
+	#aside {
+		grid-column: 2 / span 1;
+		grid-row: 3 /span 1;
+	}
+
+	#main {
+		grid-column: 1 / span 1;
+		grid-row: 3 / span 1;
+	}
+
+	.map {
+		grid-column: 2 / span 1;
+		grid-row: 4 /span 1;
+	}
+
+
+	#intro {
+		grid-column: 1 / span 1;
+		grid-row: 3 / span 1;
+	}
+
+	#sidebar {
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
+	}
+
+	#detail {
+		grid-column: 1 / span 1;
+
+	}
+
+	#footer {
+		grid-column: 1 / span 1;
+		grid-row: 3 / span 2;
+	}
+
+}
+
+/* this ends @supports */
+
+
+
+/* tablet */
+@media (min-width: 415px) and (max-width: 800px) {
+
+	#container {
+		grid-template-columns: 100%;
+	}
+
+	#header,
+	.logo {
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 1;
+	}
+
+	#homeimage {
+		grid-column: 1 / span 1;
+		grid-row: 2;
+	}
+
+	#aside {
+		grid-column: 2 / span 1;
+		grid-row: 3 /span 1;
+	}
+
+	#main {
+		grid-column: 1 / span 1;
+		grid-row: 3 / span 1;
+	}
+
+	.map {
+		grid-column: 2 / span 1;
+		grid-row: 4 /span 1;
+	}
+
+	#intro {
+		grid-column: 1 / span 1;
+		grid-row: 3 / span 1;
+	}
+
+	#sidebar {
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
+	}
+
+	#detail {
+		grid-column: 1 / span 1;
+
+	}
+
+	#footer {
+		grid-column: 1 / span 1;
+		grid-row: 3 / span 2;
+	}
+
+}
+
+/* this ends @supports */
+
+/* desktop view - add flex basis rule */
+
+
+/* 1st typographic hierarchy-Blocky */
+:root {
+	--display-font: 'Russo One', sans-serif;
+	--text-font: 'Mclaren', cursive;
+	--serious-font: 'Acme', sans-serif;
+	--complement-font: 'Kite One', sans-serif;
+	--link-font: var(--display-font);
+
+}
+
+* body {
+	font-family: var(--text-font);
+}
+
+a {
+	font-family: var(--display-font);
+}
+
+#aside {
+	font-family: var(--serious-font);
+}
+
+#footer {
+	font-family: var(--complement-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--display-font);
+}
+
+
+/* End of Typographic hierarchy */
+
+
+
+/* analogous color scheme */
+
+/*
+	Color Scheme I: Professional
+	Blue, Grey and White */
+
+:root {
+	--main-color: #2F6D80;
+	--complement: #A3EAFF;
+	--accent-one: #F0FBFF;
+	--accent-two: #787E80;
+	--accent-three: #C0C9CC;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
+
+}
+
+
+/*
+Color Scheme II : Gold and Silver */
+
+:root {
+	--main-color: #7F7C83;
+	--complement: #DFDAE6;
+	--accent-one: #BAB6BF;
+	--accent-two: #DBC76E;
+	--accent-three: #000000;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
+
+}*
+
+* 
+/*
+Color Scheme III : Original Burlywood and Blue */
+
+:root {
+	--main-color: #DEB887;
+	--complement: #6886B3;
+	--accent-one: #EFFFBA;
+	--accent-two: #180D01;
+	--accent-three: #654321;
+	--text-color: var(--accent-two);
+	--main-bg-color: var(--accent-three);
+
+}*
+
+* * p.one,
+p.two,
+p.three,
+	{
+	color: var(--text-color);
+}
+
+#container {
+	background-color: var(--main-color);
+	padding: 5px;
+}
+
+	{
+	color: var(--main-color);
+}
+
+	{
+	background-color: var(--accent-one);
+}
+
+body,
+#detail {
+	background-color: var(--accent-three);
+}
+
+a {
+	color: var(--link-color);
+}
+
+#social {
+	background-color: var(--complement);
+}
+
+
+#footer,
+.topnav,
+	{
+	background-color: var(--accent-three);
+
+}
+
+#logo {
+	background-color: var(--accent-three);
+
+
+}
+
+ol {
+	color: var(--accent-three);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--accent-one);
+}
+
+em,
+u,
+b,
+strong,
+small,
+cite,
+acronym {
+	color: var(--complement);
+}
+
+#aside {
+	background-color: var(--accent-three);
+}
+
+
+/* The html and body selectors below set the base font for the entire page */
+
+
+html {
+	font-size: 1.1em;
+}
+
+body {
+	padding: 0px;
+	font-weight: 300;
+	line-height: 1.2;
+
+}
+
+#aside {
+	text-align: left;
+	padding: 5px;
+	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+	line-height: 1.3em;
+	font-size: 1.1em;
+	margin-top: 5vh;
+
+}
+
+ol {
+	font-size: 1.1em;
+	line-height: 1.3em;
+	background: var(--main-color);
+	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+	padding-left: 0px;
+	padding-right: 0px;
+	list-style: none;
+	counter-reset: li;
+}
+
+ol li::before {
+	content: counter(li);
+	color: var(--accent-one);
+	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+	display: inline-block;
+	width: 1.4em;
+	margin-left: 5px;
+}
+
+li {
+	counter-increment: li;
+}
+
+.map {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.avatar {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+#detail {
+	background-color: var(--complement);
+	padding: 15px;
+	text-align: justify;
+	border: dashed 2px;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+
+#footer {
+	color: var(--accent-two);
+	border: solid 3px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 5px;
+	font-size: 1em;
+	font-style: none;
+	line-height: 1.3em;
+}
+
+#footer li {
+	display: inline;
+}
+
+p.footerList {
+	word-spacing: 40px;
+	font-weight: 200;
+	font-style: oblique;
+
+}
+
+h4,
+h3,
+h2,
+h1 {
+	font-weight: 300;
+	text-transform: capitalize;
+	text-shadow: -1px 0 var(--accent-three), 0 2px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+}
+
+h1 {
+
+	margin: 0 10 0em 0;
+	font-size: 2.50em;
+	text-align: center;
+	line-height: 1em;
+
+}
+
+h2 {
+	margin: 0 0 0em 0;
+	font-size: 2.25em;
+	text-align: center;
+	line-height: 1em;
+}
+
+h3 {
+	margin: 0 0 0em 0;
+	font-size: 1.27em;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+h4 {
+	margin: 0 0 0em 0;
+	font-size: 1.50em;
+	text-transform: capitalize;
+	line-height: 1em;
+}
+
+p {
+	font-weight: 400;
+	line-height: 1.4em;
+	font-size: 1.1em;
+	text-indent: 0px;
+}
+
+p.one {
+	text-align: left;
+
+}
+
+p.two {
+	text-align: left;
+
+}
+
+
+p.two img {
+	float: left;
+	clear: right;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 3px;
+	border: solid var(--accent-three) 2px;
+}
+
+
+p.one img {
+	float: none;
+	clear: none;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	border: solid var(--accent-three) 2px;
+}
+
+
+#logo {
+	font-size: 3.50em;
+	font-style: italic;
+	text-align: center;
+	text-indent: 10px;
+	border: solid var(--accent-one) 3px;
+	padding-bottom: 25px;
+	padding-top: 20px;
+	margin-bottom: 3px;
+
+}
+
+#logo a {
+	color: var(--accent-one);
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	text-shadow: -1px 0 var(--accent-three), 0 3px var(--accent-two), 3px 0 var(--main-color), 0 -1px var(--accent-three);
+
+}
+
+#copyright,
+.posted {
+	color: var(--accent-two);
+	text-shadow: 1px 1px 1px var(--accent-one);
+}
+
+
+p.page {
+	font-size: 1em;
+	margin-bottom: 1px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+.homeimage {
+	padding-top: 30px;
+	align-items: left;
+}
+
+.quote {
+	margin-top: 40px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.fa {
+	color: var(--complement);
+}
+
+#sidebar {
+	border: solid var(--accent-three) 2px;
+	margin-top: 30px;
+
+}
+
+.linkedList {
+	font-style: none;
+}
+
+span.highlight {
+	background-color: var(--main-color);
+}
+
+img,
+iframe {
+	border-radius: 20px;
+}
+
+iframe {
+	border: solid var(--accent-three) 2px;
+}
+
+figcaption {
+	color: var(--accent-one);
+	text-shadow: -1px 0 var(--accent-three), 0 2px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+	line-height: 1.1em;
+	font-size: 1.1em;
+	text-align: center;
+	font-weight: 100;
+}
+
+figcaption img {
+	float: none;
+	clear: none;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-right: 10px;
+	border: solid var(--main-color) 2px;
+}
+
+.question {
+	text-align: center;
+	color: var(--accent-one);
+	font-weight: 300;
+	line-height: 1.1em;
+	font-size: 1.1em;
+}
+
+/* mouse over link*/
+
+a:hover,
+a:active {
+	background-color: var(--accent-two);
+}
+
+
+a:active {
+	color: var(--accent-one);
+}
+
+a {
+	color: var(--accent-one);
+	text-decoration: underline;
+	letter-spacing: 1px;
+	text-shadow: -1px 0 var(--accent-three), 0 1px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+
+}
+
+div {
+	clear: both;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+	font-style: italic;
+	overflow: hidden;
+}
+
+/* Remove default list styling: remove bullet points from the list and remove default margin */
+
+.topnav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.topnav ul li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav ul li {
+	float: left;
+	text-align: center;
+	width: 25%;
+	/* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+}
+
+.topnav a {
+	color: var(--accent-one);
+	border: dashed;
+	display: block;
+	padding: 12px 14px;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+	background-color: var(--accent-one);
+	color: var(--accent-two);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+	display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+	.topnav li:not(:first-child) {
+		display: none;
+	}
+
+	.topnav li.icon {
+		float: right;
+		display: block;
+	}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive li {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+
+	@media only screen and (max-width: 600px) {
+		body {
+			background-color: var(--accent-three);
+		}
+
+	}
+
+	/*
+  =====================================
+  CSS for <iframe> embedded Google Map
+  =====================================
+*/
+	.mapWrapper {
+		position: relative;
+		/*
+    Do math with the height of your iframe divided by the width, then converted to percent
+    In this example the height is 400 and the width is 600
+    400 / 600 = .66666667
+    which is 66.6666667% */
+		padding-bottom: 66.6666667%;
+		height: 0;
+	}
+
+	.mapWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}

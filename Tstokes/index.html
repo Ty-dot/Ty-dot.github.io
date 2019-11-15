@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Home Page</title>
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Acme%7cKite+One%7cMclaren%7cRusso+One&display=swap" rel="stylesheet">
+
+	<!-- Load an icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<a href="index.html">Tyrell E Stokes</a>
+			</div>
+
+			<nav class="topnav" id="myTopnav">
+				<ul>
+					<li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+					<li><a href="about.html"><i class="fa fa-fw fa-question"></i>About</a></li>
+					<li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+					<li><a href="works.html"><i class="fa fa-fw fa-wrench"></i> Works</a></li>
+					<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="homeimage">
+
+			<img src="photos/PSMasthead.JPG" width="680" height="450" alt="controllers">
+		</div>
+
+		<aside>
+			<div id="aside">
+
+				<figure>
+					<figcaption>Hello and Welcome!<br><img src="photos/giphy2.gif" width="160" height="150" alt="star"></figcaption>
+				</figure>
+				<p class="question">
+					Here's a list of favorite<br> Video Game Stores.
+				</p>
+
+				<ol>
+					<li>Playstation</li>
+					<li>Microsoft/Xbox</li>
+					<li>Amazon</li>
+					<li>Game Stop</li>
+					<li>Best Buy</li>
+					<li>Walmart</li>
+					<li>Target</li>
+				</ol>
+			</div>
+
+		</aside>
+
+		<main>
+			<div id="main">
+
+				<h2>gamers thoughts</h2>
+				<p class="one">
+					<img src="photos/IMG_0651.JPG" width="600" height="550" alt="coffee">
+					What is Lorem Ipsum? This is a paragraph.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+
+			</div>
+		</main>
+
+		<div id="sidebar">
+			<div class="quote">
+
+				<h3>Quote of the Week:</h3>
+
+				<p>"If you make it a game, gamers will play it no matter what your motivation is in making it."<br> - Jane McGonigal</p>
+
+				<p class="linkedList">
+					<a href="https://www.brainyquote.com/">Read More Quotes</a>
+					<p>Extras...</p>
+					<p><a href="https://www.gamespot.com/reviews/">Game Reviews</a>
+					</p>
+					<p><a href="https://www.ign.com/pc">New Releases For PC</a>
+					</p>
+			</div>
+		</div>
+
+
+		<div id="intro">
+
+			<h1>Lets keep in touch!</h1>
+
+			<p class="two">
+				<img src="photos/IMG_0864.JPG" width="600" height="550" alt="flowers" />
+
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+
+		</div>
+
+
+		<div class="map">
+			<div class="mapWrapper">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48364.48346209642!2d-73.9619610241705!3d40.74486142754847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea9f8fc0b3ffff55!2sThe+Museum+of+Modern+Art!5e0!3m2!1sen!2sus!4v1514096205755" width="200" height="300" allowfullscreen></iframe>
+			</div>
+			<!-- end .mapWrapper-->
+
+		</div>
+
+
+		<div id="detail"></div>
+		
+		
+	</div>
+
+	<footer>
+		<div id="footer">
+
+			<p class="posted">Posted by: T. Stokes <img src="photos/giphy.gif" alt="Avatar" class="avatar"></p>
+
+			<div id="copyright">
+				&copy; 2019 Gamers Thoughts | Design <br> Have something to say? Get in touch with me via the following ways! </div>
+
+			<p class="footerList">
+				<a href="http://www.instagram.com">Instagram</a>
+				<a href="http://www.facebook.com">Facebook</a>
+				<a href="http://www.linkedin.com">LinkedIn</a>
+				<a href="http://www.twitter.com">Twitter</a></p>
+
+
+			<p class="page">
+				<a href="#">Top of Page</a></p>
+
+
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myTopnav");
+					if (x.className === "topnav") {
+						x.className += " responsive";
+					} else {
+						x.className = "topnav";
+					}
+				}
+
+			</script>
+
+		</div>
+	</footer>
+</body>
+
+</html>
