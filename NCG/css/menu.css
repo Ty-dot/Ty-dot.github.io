@@ -173,17 +173,17 @@ th {
 
 .table img.resize {
 	max-width: 38%;
-	max-height: 35%;
+	max-height: 38%;
 }
 
 .table2 img {
 	float: right;
 	clear: left;
-	margin: 5px;
+	margin-right: 5px;
 }
 
 .table2 img.resize {
-	max-width: 45%;
+	max-width: 50%;
 	max-height: 50%;
 	margin-right: 9%;
 }
@@ -227,10 +227,12 @@ th {
 }
 
 
-
-.publisher {
-	align-items: center;
-
+#write-post{
+    
+   border: double;
+   margin-bottom: 50px;
+   margin-top: 30px;
+   marign-right:50px;
 }
 
 .update {
@@ -253,7 +255,11 @@ blockquote {
 	text-align: justify;
 }
 
-
+    
+    
+    
+    
+}
 
 
 /* mouse over link*/
@@ -324,7 +330,6 @@ video {
 }
 
 .topnav a {
-
 	display: block;
 	padding: 12px 15px;
 	text-decoration: none;

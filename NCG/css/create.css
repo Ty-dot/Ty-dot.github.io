@@ -1,6 +1,6 @@
 input,
 button {
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-family: var(--text-font), sans-serif;
     border-style: double;
     background-color: var(--accent-two);
@@ -26,9 +26,9 @@ input {
 
 button {
     background: #000000;
-    border-radius: 0.5em;
+    border-radius: 0.4em;
     border-color: var(--main-color);
-    text-shadow: -1px 0 #000000, 0 1px var(--main-color), 1px 0 #000000, 0 -1px var(--main-color);
+    text-shadow: -1px 0 var(--accent-one),.2px 0 var(--accent-three), 1px 0 #000000, 0 -1px var(--main-color);
 
 }
 

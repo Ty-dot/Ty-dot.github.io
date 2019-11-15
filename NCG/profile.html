@@ -10,11 +10,12 @@
 	<link href="style.css" rel="stylesheet" type="text/css" "media screen">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	
+
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -26,14 +27,13 @@
 			authDomain: "mmp-three-fifty.firebaseapp.com",
 			databaseURL: "https://mmp-three-fifty.firebaseio.com",
 			projectId: "mmp-three-fifty",
-			storageBucket: "",
+			storageBucket: "mmp-three-fifty.appspot.com",
 			messagingSenderId: "29267025222",
 			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
 		};
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		//		firebase.analytics();
-
 	</script>
 </head>
 
@@ -46,14 +46,28 @@
 
 			<div id="main">
 				<img src="Inuse/XV.jpg" alt="XV">
-                
+
 
 				<div class="update">
-                    <h1>Profile Page</h1>
+					<h1>Profile Page</h1>
 
 					<p> <input id="profile-name" placeholder="Username">
-						<textarea id="bio" placeholder="Add your bio"></textarea>
+						<input id="email" placeholder="Email">
+						
 						<button id="update-profile">Update Profile</button></p>
+
+						<textarea id="bio" placeholder="Add your bio"></textarea>
+						
+					<div id="add-image">
+
+						<p>Upload your user profile image:</p>
+						
+						<p><input id="image-file" type="file" accept="image/png, image/gif, image/jpeg"></p>
+
+
+						<button id="submit-image">Upload Image</button>
+					</div>
+
 
 					<p class="form">
 						<form action="http:// www.example.com/profile.php">
@@ -112,7 +126,7 @@
 			<div id="profile">
 
 				<figure>
-						<figcaption>Character Of The Week: 
+					<figcaption>Character Of The Week:
 						<img src="Inuse/Kiryu.jpg" alt="man" width="100" height="110">Kiryu Kazuma</figcaption>
 				</figure>
 
@@ -141,7 +155,7 @@
 						<li><a href="reviews.html">Reviews</a></li>
 						<li><a href="write.html">Write-Up</a></li>
 						<li><a href="support.html">Support</a></li>
-                        
+
 						<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
 					</ul>
 				</nav>
@@ -206,30 +220,28 @@
 	<footer>
 		<div id="footer">
 			<div class="social"><i>Have something to say?</i><br>Get in touch with me via the following ways!</div>
-			<ol>
-				<a href="http://www.twitter.com">Twitter</a> -
-				<a href="http://www.facebook.com">Facebook</a> -
-				<a href="http://www.Instagram.com">Instagram</a> -
+
+			<p class="footerlist">
+				<a href="http://www.twitter.com">Twitter</a>
+				<a href="http://www.facebook.com">Facebook</a>
+				<a href="http://www.Instagram.com">Instagram</a>
 				<a href="http://www.LinkedIn.com">LinkedIn</a>
-			</ol>
-			<p class="toppage"><a href="#">Top of page</a></p>
 
-			<script>
-				function myFunction() {
-					var x = document.getElementById("myTopnav");
-					if (x.className === "topnav") {
-						x.className += " responsive";
-					} else {
-						x.className = "topnav";
+				<p class="toppage"><a href="#">Top of page</a></p>
+
+				<script>
+					function myFunction() {
+						var x = document.getElementById("myTopnav");
+						if (x.className === "topnav") {
+							x.className += " responsive";
+						} else {
+							x.className = "topnav";
+						}
 					}
-				}
-
-			</script>
+				</script>
 		</div>
 	</footer>
 
 	<script src="js/auth.js"></script>
 	<script src="js/profile.js"></script>
-</body>
-
-</html>
+</body></html>

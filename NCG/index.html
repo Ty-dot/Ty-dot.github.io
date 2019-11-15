@@ -14,6 +14,8 @@
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -25,7 +27,7 @@
 			authDomain: "mmp-three-fifty.firebaseapp.com",
 			databaseURL: "https://mmp-three-fifty.firebaseio.com",
 			projectId: "mmp-three-fifty",
-			storageBucket: "",
+			storageBucket: "mmp-three-fifty.appspot.com",
 			messagingSenderId: "29267025222",
 			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
 		};
@@ -47,19 +49,27 @@
 			<div id="main">
 				<img src="Inuse/Elite.png" alt="The group">
 				<p class="one"><b>Hello and Welcome</b> to <strong>New Chapter Gaming</strong> ! This is a test site for my MMP350 class. I'm just showing some of the techniques and code I have learned. I also will have more here. Maybe some of the information here can be of use to you,and thanks for reading.</p>
+				
+				
+				
 
 				<div class="publisher">
-					<p class="four"><b>Try Publishing A Post Here:</b></p>
-					<input id="profile-name" placeholder="Username">
 					<div id="write-post">
+                        <p class="four"><b><h1>Try Publishing A Post Here:</h1></b></p>
+					<input id="profile-name" placeholder="Username">
 						<p>
 							<textarea id="post-text" placeholder="Compose a new post"></textarea></p>
+							<div id="add-image">
+					<p><b>Upload an image:</b></p>
+				<p><input id="image-file" type="file" accept="image/png, image/gif, image/jpeg">
+					<button id="submit-image">Upload Image</button></p>
+			</div>
+				
+		
 						<button id="publish">Publish Post</button>
-						<div id="posts"> </div>
-
-					
-
-					</div>
+						</div>
+                    <div id="posts"> </div>
+                    
 				</div>
 
 			</div>
@@ -162,12 +172,13 @@
 	<footer>
 		<div id="footer">
 			<div class="social"> <i>Have something to say?</i><br>Get in touch with me via the following ways!</div>
-			<ol>
-				<a href="http://www.twitter.com">Twitter</a> -
-				<a href="http://www.facebook.com">Facebook</a> -
-				<a href="http://www.Instagram.com">Instagram</a> -
+			
+			<p class="footerlist">
+				<a href="http://www.twitter.com">Twitter</a> 
+				<a href="http://www.facebook.com">Facebook</a> 
+				<a href="http://www.Instagram.com">Instagram</a> 
 				<a href="http://www.LinkedIn.com">LinkedIn</a>
-			</ol>
+		
 
 			<p class="toppage"><a href="#">Top of page</a></p>
 

@@ -116,7 +116,6 @@ acronym {
 
 
 
-
 i {
 	color: var(--accent-one);
 
@@ -191,7 +190,7 @@ figcaption img {
 
 figcaption,
 #reviewlogo {
-	text-shadow: -1px 0 var(--complement), 0 1px var(--accent-two), 1px 0 var(--main-color), 0 -1px var(--accent-three);
+	text-shadow: -1px 0 var(--complement), 0 .2px var(--accent-two), .2px 0 var(--main-color), 0 -1px var(--accent-three);
 
 
 }
@@ -231,8 +230,9 @@ p.three {
 
 textarea {
 	color: var(--complement);
+	border-color: var(--accent-two);
+	text-align: center;
 }
-
 
 #login-message,
 #error-message {
@@ -245,4 +245,10 @@ textarea {
 	color: var(--main-color);
 	background-color: var(--accent-three);
 
+}
+
+#image-file {}
+    
+#write-post{
+    border-color: var(--complement);
 }

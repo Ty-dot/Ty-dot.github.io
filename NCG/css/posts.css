@@ -1,12 +1,15 @@
-#posts {}
+#posts {
+align-content: left;
 
 
+
+}
 
 
 .post {
 	font-family: var(--serious-font);
 	border: double;
-
+  
 }
 
 .post .text {
@@ -25,5 +28,6 @@
 textarea {
 	background-color: #000000;
 	font-family: var(--serious-font);
+        
 
 }

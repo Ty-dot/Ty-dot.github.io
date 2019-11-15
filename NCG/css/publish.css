@@ -1,11 +1,16 @@
 #write-post {
-	
+	align-items: center;
+	border: double;
+   margin-bottom: 50px;
+   margin-top: 30px; 
+   
+    
 }
 
 #post-text {
-	
+	align-items: center;
 }
 
 #publish {
-	
+	align-content: center;
 }

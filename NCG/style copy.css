@@ -1,0 +1,28 @@
+/* imported google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=McLaren%7cMarck+Script%7cRusso+One');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree|Fugaz+One|Sedgwick+Ave+Display|Kalam&display=swap');
+
+
+
+/* global sitewide styles */
+@import "css/layout.css";
+@import "css/color.css";
+@import "css/menu.css";
+@import "css/typography-1.css";
+
+
+/* page and function styles */
+@import "css/auth.css";
+@import "css/create.css";
+@import "css/profile.css";
+@import "css/publish.css";
+@import "css/posts.css";
+
+/* responsive */
+@import "css/responsive.css";
+
+img { width: auto;
+    height: auto;
+    align-content: center;
+     }

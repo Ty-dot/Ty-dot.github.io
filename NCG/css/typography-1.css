@@ -5,7 +5,7 @@
 	--serious-font: 'Helvetica';
 	--link-font: var(--display-font);
 
-}*
+}
 
 
 /* 2nd typographic hierarchy-Fancy */
@@ -15,7 +15,7 @@
 	--serious-font: 'verdana';
 	--link-font: var(--display-font);
 
-}*
+}
 
 
 
@@ -26,10 +26,9 @@
 	--serious-font: 'Arial';
 	--link-font: var(--display-font);
 
-}*
+}
 
-
-* body {
+* * body {
 	font-family: var(--text-font);
 }
 
@@ -100,7 +99,7 @@ h2 {
 	font-style: italic;
 	text-align: center;
 	align-items: center;
-	font-family: font-family: var(--text-font), cursive;
+	font-family: var(--text-font), cursive;
 	text-transform: capitalize;
 
 
@@ -178,9 +177,22 @@ p.five {
 }
 
 
-
+    #add-image{
+    font-family: var(--text-font), cursive;
+	font-size: 1em;
+	padding-bottom: 20px;
+	margin-top: 1px;
+        }
+    
+    
+    
+    
+    
+    
+   
 form {
-	font-family: var(--text-font) font-size: 1.3em;
+	font-family: var(--text-font), cursive;
+	font-size: 1.3em;
 	text-align: center;
 	align-items: center;
 	padding-bottom: 20px;
@@ -281,8 +293,6 @@ form {
 
 }
 
-
-
 #create {
 	font-family: var(--text-font), cursive;
 	border: double;
@@ -320,10 +330,15 @@ form {
 	text-align: center;
 	margin: 2px;
 	font-size: 1em;
-	letter-spacing: 1px;
-	word-spacing: 25px;
-
+	letter-spacing: 2px;
 }
+
+.footerlist {
+	font-size: 1.1em;
+	letter-spacing: 2px;
+	word-spacing: 30px;
+}
+
 
 .toppage {
 	font-family: var(--text-font), cursive;
@@ -346,13 +361,13 @@ ol {
 	border: none;
 	list-style: none;
 	counter-reset: li;
-	letter-spacing: 0.2px
+	letter-spacing: 0.3px;
 }
 
 
 
 figcaption {
-	font-family: var(--text-ffont), cursive;
+	font-family: var(--text-font), cursive;
 	line-height: 1em;
 	font-size: 1.1em;
 	text-align: center;
@@ -394,7 +409,7 @@ figcaption {
 
 #login-message,
 #error-message {
-	font-family: var(--serious-font);
+	font-family: var(--serious-font), cursive;
 
 
 }
