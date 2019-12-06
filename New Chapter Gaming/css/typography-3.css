@@ -1,0 +1,37 @@
+/* 1st typographic hierarchy */
+:root {
+	--display-font: 'Fugaz One', cursive;
+	--text-font: 'Kalam', cursive;
+	--serious-font: 'verdana';
+	--link-font: var(--display-font);
+
+}
+
+body {
+	font-family: var(--display-font);
+}
+
+a {
+	font-family: var(--link-font);
+}
+
+.post {
+	background-color: var(--accent-one);
+}
+
+.post .text {
+	font-family: var(--text-font);
+}
+
+.post .author {
+	display: inline-block;
+}
+
+.post .date {
+	display: inline-block;
+}
+
+.post .date::before {
+	content: " on ";
+	color: var(--main-color);
+}

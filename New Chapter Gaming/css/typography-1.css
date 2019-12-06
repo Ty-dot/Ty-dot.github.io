@@ -1,0 +1,230 @@
+/* 3rd typographic hierarchy-Graffiti */
+:root {
+    --display-font: 'Sedgwick Ave Display', cursive;
+    --text-font: 'Mclaren', cursive;
+    --serious-font: 'Helvetica';
+    --link-font: var(--display-font);
+
+}
+
+
+/* 2nd typographic hierarchy-Fancy */
+:root {
+    --display-font: 'Fugaz One', cursive;
+    --text-font: 'Kalam', cursive;
+    --serious-font: 'verdana';
+    --link-font: var(--display-font);
+
+}
+
+
+
+/* 1st typographic hierarchy-Blocky */
+:root {
+    --display-font: 'Russo One', serif;
+    --text-font: 'Bai Jamjuree', sans-serif;
+    --serious-font: 'Arial';
+    --link-font: var(--display-font);
+
+}
+
+* * * body {
+    font-family: var(--text-font);
+}
+
+a {
+    font-family: var(--display-font);
+}
+
+.post .text {
+    font-family: var(-serious-font);
+}
+
+#logo {
+    font-family: var(--display-font);
+}
+
+#reviewlogo {
+    font-family: var(--display-font);
+}
+
+.topnav {
+    font-family: var(--display-font), sans-serif;
+}
+
+h1 {
+    font-family: var(--text-font), cursive;
+}
+
+h2 {
+    font-family: var(--text-font), cursive;
+
+}
+
+h3 {
+    font-family: var(--text-font), cursive;
+}
+
+h4 {
+    font-family: var(--display-font);
+}
+
+
+p{
+
+    font-family: var(--text-font), cursive;
+}
+
+
+
+
+
+p.one,
+p.four {
+    font-family: var(--text-font), cursive;
+
+}
+
+p.two {
+    font-family: var(--text-font), cursive;
+
+}
+
+p.three {
+    font-family: var(--text-font), sans-serif;
+
+}
+
+p.five {
+    font-family: var(--text-font), cursive;
+
+}
+
+.bonus {
+    font-family: var(--display-font), cursive;
+}
+
+#add-image {
+    font-family: var(--text-font), cursive;
+
+}
+
+textarea {
+    font-family: var(--serious-font);
+}
+
+form {
+    font-family: var(--text-font), cursive;
+
+}
+
+.authentication {
+    font-family: var(--text-font), cursive;
+
+}
+
+.table {
+    font-family: var(--text-font), cursive;
+}
+
+
+.table2 {
+    font-family: var(--text-font), cursive;
+
+}
+
+.table3 {
+    font-family: var(--text-font), cursive;
+}
+
+.table4 {
+    font-family: var(--text-font), cursive;
+}
+
+.table5 {
+    font-family: var(--text-font), cursive;
+
+}
+
+.social {
+    font-family: var(--text-font);
+}
+
+.disclaimer {
+    font-family: var(--text-font), cursive;
+
+}
+
+.new {
+    font-family: var(--display-font), cursive;
+}
+
+#create {
+    font-family: var(--text-font), cursive;
+
+}
+
+.linkedList {
+    font-family: var(--display-font), cursive;
+
+}
+
+#copyright {
+    font-family: var(--text-font), cursive;
+}
+
+#footer {
+    font-family: var(--text-font), cursive;
+
+}
+
+.toppage {
+    font-family: var(--text-font), cursive;
+
+}
+
+ol {
+    font-family: var(--display-text), cursive;
+
+}
+
+figcaption {
+    font-family: var(--text-font), cursive;
+}
+
+.quote {
+
+    font-family: var(--text-font), cursive;
+}
+
+::placeholder {
+    font-family: var(--display-font), serif;
+}
+
+#user-name {
+    font-family: var(--display-font), serif;
+
+}
+
+#login-message,
+#error-message {
+    font-family: var(--serious-font), cursive;
+}
+
+input {
+    font-family: var(--serious-font), cursive;
+}
+
+.post .text {
+ font-family: var(--text-font), cursive;
+}
+
+.post .date {
+ font-family: var(--text-font), cursive;
+}
+
+li{
+
+     font-family: var(--text-font), cursive;
+}
+

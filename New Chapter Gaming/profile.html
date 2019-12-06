@@ -5,17 +5,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Profile</title>
+	<title>Profile Page</title>
 
 	<link href="style.css" rel="stylesheet" type="text/css" "media screen">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link href="https://fonts.googleapis.com/css?family=McLaren%7cMarck+Script%7cRusso+One" rel="stylesheet">
 
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -27,7 +27,7 @@
 			authDomain: "mmp-three-fifty.firebaseapp.com",
 			databaseURL: "https://mmp-three-fifty.firebaseio.com",
 			projectId: "mmp-three-fifty",
-			storageBucket: "",
+			storageBucket: "mmp-three-fifty.appspot.com",
 			messagingSenderId: "29267025222",
 			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
 		};
@@ -41,62 +41,83 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<div id="logo">
-				<logo><a href="index.html">New Chapter Gaming</a></logo>
-			</div>
+			<main class="boxflex">
+				<div id="logo">
+					<logo><a href="index.html">New Chapter Gaming</a></logo>
+				</div>
+			</main>
 
 			<div id="main">
-				<img src="Inuse/compost.png" alt="nyc">
+				<main class="boxflex2">
+					<img src="Inuse/XV.jpg" alt="XV"></main>
 
-				<div class="update">
+				<main class="boxflex3">
+					<div class="update">
 
-					<p> <input id="profile-name" placeholder="Username">
-						<textarea id="bio" placeholder="Add your bio"></textarea>
-						<button id="update-profile">Update Profile</button></p>
+						<h1>Profile Page</h1>
+                        <div id="add-image">
+                        	<img id="edit-profile-image">
+							<p>Upload or Change Your User Profile Image:</p>
 
-					<p class="form">
-						<form action="http:// www.example.com/profile.php">
+							<p><input id="image-file" type="file" accept="image/png, image/gif, image/jpeg"></p>
+							<button id="submit-image">Upload Image</button>
+						</div>
+                            <p>Try adding some extra information!</p>
+						
+						<p> <input id="profile-name" placeholder="Username">
+							<input id="color" placeholder="Favorite Color">
+							<input id="age" placeholder="Age"></p>
 
-							<p>Please Select Your Favorite Current Platform(s):
-								<br />
-								<input type="checkbox" name="service" value="Xbox One" checked="checked" /> Xbox One
-								<input type="checkbox" name="service" value="PS4" /> Playstation 4
-								<input type="checkbox" name="service" value="Switch" /> Nintendo Switch
-								<input type="checkbox" name="service" value="PC" /> PC
+						<p> <textarea id="bio" placeholder="Add your bio here. It can be anything!"></textarea></p>
+                        
+                        	
 
 
+						<p> <button id="update-profile">Update Profile</button></p>
+
+					
 
 
+						<p class="form">
+							<form action="http:// www.example.com/profile.php">
 
-							</p>
-						</form>
+								<p>Please Select Your Favorite Current Platform(s):
+									<br />
+									<input type="checkbox" name="service" value="Xbox One" checked="checked" /><small>Xbox One</small>
+									<input type="checkbox" name="service" value="PS4" /><small>Playstation 4</small>
+									<input type="checkbox" name="service" value="Switch" /><small>Nintendo Switch</small>
+									<input type="checkbox" name="service" value="PC" /><small>PC</small>
 
-						<form action="http://www.example.com/profile.php">
-							<p>What Is Your Favorite Retro Console?</p>
-							<select name="devices">
-								<option value="select">Choose Here</option>
-								<option value="playstation">Playstation 1</option>
-								<option value="playstation2">Playstation 2</option>
-								<option value="playstation3">Playstation 3</option>
-								<option value="xbox">Orignal Xbox</option>
-								<option value="xbox360">Xbox 360</option>
-								<option value="nes">NES</option>
-								<option value="snes">Super Nintendo</option>
-								<option value="n64">Nintendo 64</option>
-								<option value="GC">GameCube</option>
-								<option value="wii">Wii</option>
-								<option value="wiiu">Wii U</option>
-								<option value="gens">Sega Genesis </option>
-								<option value="saturn">Sega Saturn</option>
-								<option value="dream">Sega Dreamcast</option>
-								<option value="CDI">Phillps CD-I</option>
-								<option value="Atari">Atari 2600</option>
-							</select>
-						</form>
-				</div>
+								</p>
+							</form>
+
+							<form action="http://www.example.com/profile.php">
+								<p>What Is Your Favorite Retro Console?</p>
+								<select name="devices">
+									<option value="select">Choose Here</option>
+									<option value="playstation">Playstation 1</option>
+									<option value="playstation2">Playstation 2</option>
+									<option value="playstation3">Playstation 3</option>
+									<option value="xbox">Orignal Xbox</option>
+									<option value="xbox360">Xbox 360</option>
+									<option value="nes">NES</option>
+									<option value="snes">Super Nintendo</option>
+									<option value="n64">Nintendo 64</option>
+									<option value="GC">GameCube</option>
+									<option value="wii">Wii</option>
+									<option value="wiiu">Wii U</option>
+									<option value="gens">Sega Genesis </option>
+									<option value="saturn">Sega Saturn</option>
+									<option value="dream">Sega Dreamcast</option>
+									<option value="CDI">Phillps CD-I</option>
+									<option value="Atari">Atari 2600</option>
+								</select>
+							</form>
+					</div>
+				</main>
 
 				<div class="checkout">
-					<h5>Check out these sites!</h5>
+					<h4>Check out these sites!</h4>
 
 					<p class="fa-social">
 						<a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
@@ -105,25 +126,29 @@
 						<a href="http://www.vimeo.com" class="fa fa-vimeo"></a>
 						<a href="http://www.youtube.com" class="fa fa-youtube"></a>
 
-
-
 					</p>
 
-
-
 				</div>
+
 			</div>
 		</div>
 
-		<main class="boxflex">
+		<profile>
 			<div id="profile">
+				<main class="boxflex3">
+					<div class="profileimg">
 
-				<figure>
-					<figcaption> Kiryu
-						<img src="Inuse/Kiryu.jpg" alt="man" width="100" height="110"></figcaption>
-				</figure>
-
-				<button id="edit-profile">Edit Profile</button>
+						<img id='edit-profile-image' src="images/default.png" alt="new" width="200" height="200">
+					</div>
+					
+					<div class="pbutton">
+						<button id="edit-profile">Edit Profile</button></div>
+						
+					<div id="user-info">
+						<p id="user-name"></p>
+						<button id="logout-button">Logout</button>
+					</div>
+				</main>
 
 				<div id="login">
 					<input id="email" placeholder="Email">
@@ -133,33 +158,39 @@
 					<p id="login-message"></p>
 				</div>
 
-				<div id="user-info">
-					<p id="user-name"></p>
-					<button id="logout-button">Logout</button>
-				</div>
-
+				<div class="new"><a href="posts.html">Postboard</a></div>
 				<div class="new"><a href="create.html">Create new account</a></div>
 
-				<nav class="topnav" id="myTopnav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="profile.html">Profile</a></li>
-						<li><a href="users.html">Users</a></li>
-						<li><a href="support.html">Support</a></li>
-						<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-					</ul>
-				</nav>
+				<main class="boxflex4">
+					<nav class="topnav" id="myTopnav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="security.html">Security</a></li>
+							<li><a href="reviews.html">Reviews</a></li>
+							<li><a href="write.html">Write-Up</a></li>
+							<li><a href="support.html">Support</a></li>
+							<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+						</ul>
+					</nav>
+				</main>
+
+				<div class="new"><a href="users.html">Users</a></div>
+
 
 				<p class="giphy">
 					<img src="Inuse/mk.gif" alt="party" width="0" height="0"></p>
 			</div>
-		</main>
-
+		</profile>
 
 		<div id="sidebar">
 
-			<main class="boxflex2">
+			<main class="boxflex5">
+				<figure>
+					<figcaption>Character Of The Week:
+						<img src="Inuse/Kiryu.jpg" alt="man" width="100" height="110">Kiryu Kazuma</figcaption>
+				</figure>
+
 				<div class="quote">
 					<h2>
 						Quote of the Week
@@ -175,7 +206,8 @@
 				</h3>
 				<ul class="linkedList">
 					<li class="first">
-						<a href="https://www.brainyquote.com/">Read More Quotes</a></li>
+						<a href="https://github.com/Ty-dot/Ty-dot.github.io/tree/master">Github</a></li>
+					<li><a href="https://www.brainyquote.com/">Read More Quotes</a></li>
 					<li> <a href="https://www.youtube.com/watch?v=ryi1QBA6XyI">Video of the Week</a>
 					</li>
 					<li class="last">
@@ -183,7 +215,7 @@
 					</li>
 				</ul>
 			</main>
-			
+
 			<div class="map">
 				<div class="mapWrapper">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -206,33 +238,33 @@
 
 	<div id="copyright">
 		&copy; 2019 T.E.S | Design
-	</div>
 
-	<footer>
-		<div id="footer">
-			<div class="social"> Have something to say?<br>Get in touch with me via the following ways!</div>
-			<ol>
-				<a href="http://www.twitter.com">Twitter</a> -
-				<a href="http://www.facebook.com">Facebook</a> -
-				<a href="http://www.Instagram.com">Instagram</a> -
-				<a href="http://www.LinkedIn.com">LinkedIn</a>
-			</ol>
-			<p class="toppage"><a href="#">Top of page</a></p>
+		<footer>
+			<div id="footer">
+				<div class="social"><i>Have something to say?</i><br>Get in touch with me via the following ways!</div>
 
-			<script>
-				function myFunction() {
-					var x = document.getElementById("myTopnav");
-					if (x.className === "topnav") {
-						x.className += " responsive";
-					} else {
-						x.className = "topnav";
+				<p class="footerlist">
+					<a href="http://www.twitter.com">Twitter</a>
+					<a href="http://www.facebook.com">Facebook</a>
+					<a href="http://www.Instagram.com">Instagram</a>
+					<a href="http://www.LinkedIn.com">LinkedIn</a>
+					<a href="http://www.Youtube.com">Youtube</a></p>
+				<p class="toppage"><a href="#">Top of page</a></p>
+
+				<script>
+					function myFunction() {
+						var x = document.getElementById("myTopnav");
+						if (x.className === "topnav") {
+							x.className += " responsive";
+						} else {
+							x.className = "topnav";
+						}
 					}
-				}
 
-			</script>
-		</div>
-	</footer>
-
+				</script>
+			</div>
+		</footer>
+	</div>
 	<script src="js/auth.js"></script>
 	<script src="js/profile.js"></script>
 </body>

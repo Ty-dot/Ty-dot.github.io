@@ -6,6 +6,7 @@
 		grid-template-columns: 100%;
 	}
 
+	#header,
 	#logo {
 		grid-column: 2;
 		grid-row: 1 / span 1;
@@ -22,7 +23,7 @@
 	}
 
 	#login,
-	#user {
+	#user-info {
 		grid-column: 3;
 		grid-row: 1 / span 1;
 	}
@@ -39,7 +40,7 @@
 
 	#footer {
 		grid-column: 2;
-		grid-row: 4 / span 1;
+		grid-row: 4 / span 2;
 	}
 
 
@@ -63,6 +64,7 @@
 		grid-template-columns: 100%;
 	}
 
+	#header,
 	#logo {
 		grid-column: 1;
 		grid-row: 1 / span 1;
@@ -79,7 +81,7 @@
 	}
 
 	#login,
-	#user {
+	#user-info {
 		grid-column: 3;
 		grid-row: 1 / span 1;
 	}
@@ -94,21 +96,21 @@
 		grid-row: 3 / span 1;
 	}
 
-
 	#footer {
 		grid-column: 2;
-		grid-row: 4 / span 1;
+		grid-row: 4 / span 2;
 	}
 
 	.boxflex {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		max-height: inherit;
-		min-width: inherit;
+		max-height: 400vh;
+		min-width: 400vm;
 		align-items: center;
 		border: 5px double;
-		margin: 20px;
+		padding-top: 10px;
+		margin: 25px;
 	}
 
 	.boxflex2 {
@@ -116,15 +118,67 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
-		max-height: inherit;
-		min-width: inherit;
+		max-height: 400vh;
+		min-width: 400vm;
 		border: 5px double;
-		margin: 20px;
+		margin: 25px;
 
 	}
 
-	.boxflex2 map {
-		max-width: 100%;
+	.boxflex4 {
+		margin-left: 5em;
+		margin-right: 5em;
+	}
+
+	.boxflex3,
+	p.one,
+	p.two,
+	p.three,
+	p.four,
+	.disclaimer,
+	.table,
+	.update {
+		margin: 25px;
+	}
+
+	.boxflex5,
+	.logo,
+	.map {
+		margin: 25px;
+	}
+
+	.quote {
+		margin-top: 2px;
+	}
+
+	.boxflex2 li {
+		margin-right: 25px;
+	}
+
+	.main p.table,
+	p.table2,
+	p.table3,
+	p.table4,
+	p.table5 {
+		margin: 25px;
+	}
+
+	.publisher {
+		margin: 30px;
+	}
+
+	.giphy,
+	.giphy3 {
+		margin-left: 28%;
+		margin-right: 28%;
+	}
+
+	.create {
+		margin: 25px;
+	}
+
+	figcaption {
+		margin: 10%;
 	}
 
 	/* create account  */
@@ -133,7 +187,7 @@
 		flex-wrap: wrap;
 	}
 
-	create-account input {
+	#create-account input {
 		flex-grow: 1;
 		flex-shrink: 0;
 		flex-basis: 30%;

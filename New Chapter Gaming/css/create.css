@@ -1,11 +1,13 @@
 input,
 button {
-    font-size: 1.1em;
-    font-family: 'Mclaren', sans-serif;
-    border-style: solid;
+    font-size: 1.4em;
+    font-family: var(--text-font), sans-serif;
+    border-style: double;
     background-color: var(--accent-two);
-
-    margin-bottom: 7px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 input:focus,
@@ -14,18 +16,23 @@ button:focus {
 }
 
 input {
-    border: 2px solid var(--main-color);
+    border: 2px double var(--main-color);
     text-align: center;
-
+    background: #000000;
 }
 
 button {
     background: #000000;
-    border-radius: 1em;
-    border-style: solid;
+    border-radius: 0.4em;
     border-color: var(--main-color);
-    text-shadow: -1px 0 #000000, 0 1px #000000, 2px 0 #000000, 0 -1px var(--main-color);
+    text-shadow: -1px 0 var(--accent-one), .2px 0 var(--accent-three), 1px 0 #000000, 0 -1px var(--main-color);
+}
 
+.pbutton {
+    background-color: var(--accent-three);
+    font-size: 1.4em;
+    border-style: none;
+    padding-bottom: 0px;
 }
 
 #create-account {

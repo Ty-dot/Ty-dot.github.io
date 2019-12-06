@@ -1,19 +1,29 @@
-/* global styles */
+/* imported google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=McLaren%7cMarck+Script%7cRusso+One');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree|Fugaz+One|Sedgwick+Ave+Display|Kalam&display=swap');
+
+
+
+/* global sitewide styles */
 @import "css/layout.css";
 @import "css/color.css";
-
-
-/* page styles */
-@import "css/auth.css";
 @import "css/menu.css";
+@import "css/typography-1.css";
+
+
+/* page and function styles */
+@import "css/auth.css";
 @import "css/create.css";
+@import "css/publish.css";
+@import "css/posts.css";
+@import "css/users.css";
 
 
-/* Basic Responsive Images and Video */
+/* responsive */
 @import "css/responsive.css";
 
-
-
-
-.img {
-    width: 100%; }
+img { width: auto;
+    height: auto;
+    align-content: center;
+     }

@@ -1,0 +1,40 @@
+/* 1st typographic hierarchy */
+:root {
+	--display-font: 'Russo One', serif;
+	--text-font: 'Bai Jamjuree', sans-serif;
+	--serious-font: 'Arial';
+	--link-font: var(--display-font);
+
+}
+
+body {
+	font-family: var(--display-font);
+}
+
+a {
+	font-family: var(--link-font);
+}
+
+.post .date::before {
+	content: " on ";
+	color: var(--main-color);
+}
+
+.post {
+	font-family: var(--serious-font);
+
+}
+
+.post .text {
+	color: var(--text-color);
+}
+
+.post .author {
+	color: var(--complement);
+}
+
+.post .date {
+	color: var(--main-color);
+}
+
+

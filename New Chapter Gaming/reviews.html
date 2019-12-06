@@ -5,10 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Create An Account</title>
+	<title>Reviews</title>
 
-	<link href="style.css" rel="stylesheet" type="text/css" "media screen">
-
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen">
 
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
@@ -17,6 +16,7 @@
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
 		 https://firebase.google.com/docs/web/setup#config-web-app -->
+
 
 	<script>
 		// Your web app's Firebase configuration
@@ -32,7 +32,6 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		//		firebase.analytics();
-
 	</script>
 </head>
 
@@ -42,40 +41,89 @@
 			<main class="boxflex">
 				<div id="logo">
 					<logo><a href="index.html">New Chapter Gaming</a></logo>
+
 				</div>
 			</main>
-
 			<div id="main">
 				<main class="boxflex2">
-					<img src="https://www.wallpaperup.com/uploads/wallpapers/2013/05/13/85396/d59cc4155e380e462f25a9b66524aba3.jpg" alt="team"></main>
+					<div id="reviewlogo"><img src="Inuse/A2.jpg" alt="flower">
+						<reviewlogo class="glow">Reviews</reviewlogo>
+					</div>
 
-				<div id="create">
-					<main class="boxflex2">
-						<!-- create user -->
-						<h1>Create a new account</h1>
-						<input id="username" placeholder="Username">
-						<input id="email" placeholder="Email">
-						<input id="password" placeholder="Password" type="password">
-						<button id="create-button">Create</button>
-						<p id="error-message"></p>
-						<p>Want to know which type of passwords shouldn't be used? <a href="users.html"> click here!</a></p>
-					</main>
-				</div>
+					<h1>Featured Review - <strong>YAKUZA 0</strong> (Playstation 4/PC)</h1>
+					<img class="left" src="http://game-insider.com/wp-content/uploads/2015/02/youtube.jpg">
+
+
+					<p class="four">
+
+						The game begins with a man named <strong>Kiryu Kazama</strong>, (left) who is a newbie to the Japanese mafia, otherwise known as the Yakuza. He wanted to join because he was adopted by a Yakuza captain named Kazama who took him in and raised him. Kazama was locked away in prison during this time. He felt joining the Yakuza was a way to repay him, even though Kazama was against it and wanted him to live a normal life. Kiryu was sent on a job to rough up a person whom owed money, but later he saw in a news report the man was murdered. He eventually finds out that someone in the Dojima family (allies of the Kazama family) had set him up. This causes the cops to search around. He was blackmailed to betray Kazama, but he refused and as a result the entire Yakuza is out to capture and kill him. During this chaos, Kiryu also learns a dark, billion dollar secret about the place where the man was killed.
+					</p>
+
+
+					<p class="four">
+
+						The secondary protagonist, <strong>Goro Majima</strong> (right) was a former Yakuza member himself. He was kicked out of the Yakuza and tortured because he chose to disobey his captain, Shimano's orders due to his brother being ambushed. The captain liked and didn't want to kill Majima, so he was made as the manager of a club called Grand, where they can keep him close. He had a reputation for his hospitable, "customer is always right" mentality. Majima wants to rejoin the family, and he'll do whatever it takes to accomplish that... or so he thought.
+					</p>
+
+
+
+					<p class="four">
+						<img class="left" src="Inuse/gameplay.jpg" width="341" height="205">
+						The core gameplay in YAKUZA 0 is very fun. It is a combination of a beat em' up action adventure and a Role-Playing Game. As you play, you will unlock <strong>multiple different fighting styles</strong>, with unique feels to them. During fights, you can use weapons (like a motorcycle!) and satisfying finishing moves on your opposition. The combat is very fluid, and sometimes hectic as you fight up to 20 people at once at the same time, much like a classic martial arts movie. The story is a good length also.</p>
+
+					<p class="four">
+						Outside of combat and the story, Yakuza offers a rich amount of side content. You can go Bowling, dance in a disco club, go to batting practice, play darts, and much more! You can play these online also. There are over 40 side stories that you can do as well. I highly recommend picking this game up.
+					</p>
+
+					<hr>
+					<review>
+						<p class="four">
+							<li class="first">
+								<b>&#43;</b> Very engaging story that keeps you invested.
+							</li>
+							<li>
+								<b>&#43;</b> Combat that is loads of fun. There are eight styles in total, two must be unlocked after you finsh the game.
+							</li>
+							<li>
+								<b>&#43;</b> Solid Graphics and a pretty good soundtrack. Every fighting style has its own theme.
+							</li>
+							<li>
+								<b>&#43;</b> Filled with content. You'll be back, even after you're done with the main story
+							</li>
+							<li>
+								<b>&#45;</b> The pacing is slow at certain parts.
+							</li>
+							<li class="last">
+								<b>&#61;</b> Overall Score&#45;<b>93</b>
+							</li>
+						</p>
+					</review>
+				</main>
 			</div>
 		</div>
-
-		<profile>
+		<main class="boxflex3">
 			<div id="profile">
-				
-						<p class="giphy">
-					<img src=Inuse/circle.gif alt="green" width="0" height="0"></p>
-				
-						
-					<div id="user-info">
-						<p id="user-name"></p>
-						<button id="logout-button">Logout</button>
-					</div>
-				</main>
+				<div class="profileimg">
+					<img id='edit-profile-image' src="images/default.png" alt="new" width="200" height="200">
+				</div>
+
+				<div class="pbutton">
+                   <button id="edit-profile">Edit Profile</button>
+                </div>
+
+				<div id="user-info">
+					<p id="user-name"></p>
+					<button id="logout-button">Logout</button>
+				</div>
+
+				<div id="login">
+					<input id="email" placeholder="Email">
+					<input id="password" placeholder="Password" type="password">
+					<button id="login-button">Login</button>
+
+					<p id="login-message"></p>
+				</div>
+
 
 				<div class="new"><a href="posts.html">Postboard</a></div>
 				<div class="new"><a href="create.html">Create new account</a></div>
@@ -95,9 +143,10 @@
 				</main>
 				<div class="new"><a href="users.html">Users</a></div>
 
-			
+				<p class="giphy">
+					<img src="https://thumbs.gfycat.com/RectangularTotalBilby-small.gif" alt="battery" width="0" height="0"></p>
 			</div>
-		</profile>
+		</main>
 
 		<div id="sidebar">
 			<main class="boxflex5">
@@ -105,8 +154,6 @@
 					<figcaption>Character Of The Week:
 						<img src="Inuse/Kiryu.jpg" alt="man" width="100" height="110">Kiryu Kazuma</figcaption>
 				</figure>
-
-
 				<div class="quote">
 					<h2>
 						Quote of the Week
@@ -149,6 +196,7 @@
 				</form>
 			</div>
 		</div>
+
 	</div>
 
 	<div id="copyright">
@@ -176,12 +224,10 @@
 						x.className = "topnav";
 					}
 				}
-
 			</script>
+
 		</div>
 	</footer>
+	<script src="js/auth.js"></script>
 
-	<script src="js/create.js"></script>
-</body>
-
-</html>
+</body></html>

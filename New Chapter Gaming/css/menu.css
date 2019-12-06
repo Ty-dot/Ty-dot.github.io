@@ -1,37 +1,49 @@
 style.css
-/*font*/
+/*inherited*/
 
-@import url('https://fonts.googleapis.com/css?family=Russo+One%7cMcLaren%7Marck+Script');
-
-/* The html and body selectors below set the base font for the entire page */
+/* This page controls widgets,spacing, and various other things not directly linked to typography or colors */
 
 
 html {
 	font-size: 1.2em;
-	font-weight: 100;
+	font-weight: 300;
 	line-height: 1.3em;
 }
 
 body {
-	border-style: dotted;
-	padding: .5px;
+	border-style: inset;
+	padding: 1px;
 }
 
 #logo {
-	font-family: 'Russo One', cursive;
 	margin-top: 15px;
 	margin-bottom: 25px;
-	font-size: 3.75em;
+	font-size: 4em;
 	text-align: center;
-	font-style: italic;
+	font-style: none;
+
 }
 
+#reviewlogo {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 3em;
+	text-align: center;
+	font-style: none;
+}
+
+.glow {
+	font-size: 50px;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
 
 h1 {
 	font-size: 2.00em;
 	font-style: none;
 	text-align: center;
-	font-family: 'Mclaren', cursive;
 	text-transform: capitalize;
 
 }
@@ -41,17 +53,12 @@ h2 {
 	font-style: italic;
 	text-align: center;
 	align-items: center;
-	font-family: 'Mclaren', cursive;
 	text-transform: capitalize;
-	text-decoration: underline;
-
 }
 
 h3 {
 	font-size: 1.2em;
 	font-style: italic;
-	margin-left: 1px;
-	font-family: 'Mclaren', cursive;
 	text-transform: capitalize;
 	text-decoration: none;
 	text-transform: capitalize;
@@ -59,47 +66,31 @@ h3 {
 
 
 h4 {
-	font-size: 1.2em;
-	font-style: italic;
-	margin-left: 0px;
-	font-family: 'Mclaren', cursive;
-	text-transform: capitalize;
-	text-decoration: none;
-	text-align: center;
-
-}
-
-h5 {
-	font-size: .9em;
+	font-size: 1em;
 	font-style: none;
-	margin-bottom: 30px;
-	font-family: 'Mclaren', cursive;
 	text-transform: uppercase;
 	text-decoration: none;
-	line-height: 0px;
 	text-align: center;
-	word-spacing: 1px;
+	word-spacing: 0px;
+}
+
+p {
+	text-transform: none;
 }
 
 p.one,
 p.four {
-	font-family: 'Mclaren', cursive;
-	font-weight: 200;
 	line-height: 1.4em;
 	font-size: 1.2em;
-	text-indent: 0px;
 	margin-bottom: 5px;
 	margin-left: 0px;
 	text-align: left;
 }
 
 p.two {
-	font-family: 'Mclaren', cursive;
-	font-weight: 200;
 	font-style: italic;
 	line-height: 1.4em;
 	font-size: 1.2em;
-	text-indent: 0px;
 	margin-bottom: 50px;
 	margin-left: 1px;
 	margin-right: 0px;
@@ -107,199 +98,37 @@ p.two {
 }
 
 p.three {
-	font-family: 'Marck Script', sans-serif;
 	font-size: 1.4em;
-	margin-left: 1px;
+	margin-left: 0px;
 }
 
-p {
-	text-transform: none;
-}
-
-
-.bonus {
-	text-align: center;
-	align-items: center;
-	font-family: 'Russo One', cursive;
-	font-size: 1.1em;
-	color: #000000;
-
-}
-
-.update {
-	border: dotted;
-	text-align: center;
-	align-items: center;
-	margin-top: 30px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	word-spacing: 5px;
-	margin-bottom: 50px;
-
-}
-
-form {
-	font-family: 'Mclaren', cursive;
-	font-size: 1.3em;
-	text-align: center;
-	align-items: center;
-	padding-bottom: 20px;
-	margin-top: 40px;
-}
-
-.social {
-	font-family: 'Mclaren', cursive;
-	font-size: 1em;
-	text-align: center;
-	word-spacing: 0px;
-	line-height: 1.2em;
-
-}
-
-.disclaimer {
-	font-family: 'Mclaren', cursive;
-	font-size: .9em;
-	text-align: justify;
-	word-spacing: 0px;
-	line-height: 1.2em;
-}
-
-
-.new {
-	font-family: 'Mclaren', cursive;
-	font-weight: 200;
-	text-decoration: underline;
+p.five {
 	line-height: 1.4em;
-	font-size: 1.3em;
-	margin-bottom: 30px;
-	margin-top: 20px;
-
-}
-
-#profile {
-	text-align: center;
-	align-items: center;
-
-}
-
-#login {
-	margin-top: 10px;
-	padding-top: 15px;
-}
-
-.giphy {
-	margin-top: 50px;
-}
-
-#create {
-	font-family: 'Mclaren', cursive;
-	border: dotted;
-	text-align: center;
-	margin-top: 20px;
-	padding-top: 25px;
-	padding-bottom: 10px;
-}
-
-#sidebar {
 	font-size: 1.1em;
-
-}
-
-.checkout {
-	margin-top: 20px;
-	padding-top: 10px;
-}
-
-.linkedList {
-	font-family: 'Mclaren', cursive;
-	border: dotted;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-#copyright {
-	font-family: 'Mclaren', cursive;
-	font-style: none;
+	margin-bottom: 5px;
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: .9em;
-	font-style: none;
-	line-height: 1.1em;
-	letter-spacing: .2px;
+	text-transform: capitalize;
 }
 
-#footer {
-	font-family: 'McLaren', cursive;
-	font-style: none;
-	border: double;
-	text-align: center;
-	margin: 2px;
-	font-size: 1em;
-	letter-spacing: 1px;
-	word-spacing: 25px;
-
-}
-
-.toppage {
-	font-family: 'Russo One', cursive;
-	font-size: .9em;
-	text-align: right;
-	margin-bottom: 9px;
-	margin-top: 1px;
-	margin-right: 3px;
-	word-spacing: 0px;
-}
-
-ul {
-	list-style: square;
-}
-
-
-ol {
-	font-family: 'McLaren', cursive;
-	font-size: 1.2em;
-	font-weight: 200;
-	text-align: center;
-	line-height: 1.3em;
-	border: none;
-	list-style: none;
-	counter-reset: li;
-}
-
-ol li::before {
-	content: counter(li);
-	display: inline-block;
-	width: 1.2em;
-	margin-left: 0em;
-	padding: 0px;
-}
-
-li {
-	counter-increment: li;
-}
-
-figcaption {
-	font-family: 'Mclaren', cursive;
-	line-height: 1em;
-	font-size: 1.1em;
-	text-align: center;
-	font-weight: 100;
-	letter-spacing: 2px;
-}
 
 figcaption img {
 	float: none;
 	clear: none;
-	margin-top: 6px;
-	border: double 2px;
+	margin-top: 3px;
+	margin-bottom: 1px;
+	border: double 3px;
 }
 
+figcaption {
+	line-height: 1em;
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
 
 .map {
-	margin-top: 30px;
-	margin-left: 9px;
-
+	margin: 30px;
 }
 
 span.highlight {}
@@ -341,17 +170,17 @@ iframe {
 }
 
 .fa-youtube {
-	background: #c4302b;
+	background: #bb0000;
 	color: white;
 }
 
 .fa {
-	padding: 2px;
-	font-size: 9px;
-	width: 25px;
+	padding: 8px;
+	font-size: 20px;
+	width: 20px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 5px;
+	margin: 5px;
 	border-radius: 0px;
 }
 
@@ -361,19 +190,304 @@ iframe {
 	border-radius: 0px;
 }
 
+ol {
+	font-size: 1.2em;
+	font-weight: 200;
+	text-align: center;
+	line-height: 1.3em;
+	border: none;
+	list-style: none;
+	counter-reset: li;
+	letter-spacing: 0.3px;
+}
+
+ol li::before {
+	content: counter(li);
+	display: inline-block;
+	width: 1.2em;
+	margin-left: 0em;
+	padding: 0px;
+}
+
+li {
+	counter-increment: li;
+}
+
+ul {
+	list-style: square;
+}
+
+review {
+	list-style: none;
+	text-align: justify;
+	font-variant-caps: small-caps;
+	font-size: 1.1em;
+
+}
+
 .quote {
-	border: dotted;
+	border: double;
 	text-align: center;
 	margin-top: 20px;
 	padding-bottom: 20px;
-	font-family: 'Mclaren', cursive;
-	font-weight: 200;
 	font-style: none;
 	padding-left: 3px;
 	padding-right: 3px;
 	line-height: 1.5em;
 	font-size: 1.1em;
 	margin-bottom: 20px;
+}
+
+#sidebar {
+	font-size: 1.1em;
+
+}
+
+.checkout {
+	margin-top: 20px;
+	padding-top: 10px;
+}
+
+#login {
+	margin-top: 1px;
+	padding-top: 1px;
+}
+
+.giphy {
+	
+}
+
+
+tr:nth-child(even) {}
+
+td,
+th {
+	border: 2px double;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-transform: capitalize;
+	border-collapse: collapse;
+	width: 100px;
+	border-radius: 5px;
+}
+
+.table {
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: right;
+	clear: left;
+}
+
+.table2 {
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: right;
+	clear: left;
+}
+
+.table3 {
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: left;
+	clear: right;
+}
+
+.table4 {
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: right;
+	clear: left;
+}
+
+.table5 {
+	font-size: 1em;
+	margin-bottom: 20px;
+	float: left;
+	clear: right;
+}
+
+.table img {
+	float: left;
+	clear: right;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.table img.resize {
+	max-width: 40%;
+	max-height: 38%;
+}
+
+.table2 img {
+	float: right;
+	clear: left;
+	margin-right: 0px;
+}
+
+.table2 img.resize {
+	max-width: 55%;
+	max-height: 50%;
+	margin-right: 13%;
+}
+
+.table3 img {
+	float: left;
+	clear: right;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+.table3 img.resize {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.table4 img {
+	float: right;
+	clear: left;
+	margin-top: 3px;
+}
+
+.table4 img.resize {
+	max-width: 48%;
+	max-height: 0%;
+	margin-right: 40px;
+}
+
+.table5 img {
+	float: left;
+	clear: right;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+.table5 img.resize {
+	max-width: 50%;
+	max-height: 50%;
+}
+
+
+#write-post {
+	border: double;
+	margin-bottom: 50px;
+	text-align: center;
+	margin-top: 30px;
+	padding-bottom: 15px;
+
+}
+#publish {align-items: center;}
+textarea {
+	text-align: center;
+}
+
+.update {
+	border: double;
+	text-align: center;
+	align-items: center;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	word-spacing: 5px;
+	margin-bottom: 50px;
+
+}
+
+.bonus {
+	text-align: center;
+	align-items: center;
+	font-size: 1.1em;
+}
+
+#add-image {
+	font-size: 1em;
+	padding-bottom: 20px;
+	margin-top: 1px;
+
+}
+
+form {
+	font-size: 1.3em;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 20px;
+	margin-top: 40px;
+}
+
+.authentication {
+	line-height: 1.3em;
+	font-size: 1.1em;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	text-align: left;
+}
+
+.social {
+	font-size: 1em;
+	text-align: center;
+	margin-top: 10px;
+	word-spacing: 0px;
+
+}
+
+.disclaimer {
+	font-size: .9em;
+	text-align: justify;
+	word-spacing: 0px;
+	line-height: 1.2em;
+}
+
+.new {
+	text-decoration: underline;
+	line-height: 1.4em;
+	text-align: center;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+
+#profile {
+	text-align: center;
+	align-items: center;
+
+}
+
+.profileimg {
+	margin-top: 10px;
+	margin-bottom: px;
+	width: 100%;
+	height: auto;
+	border: double;
+	align-items: center;
+}
+
+
+#create {
+	border: double;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+.linkedList {
+	border: double;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: .2px;
+}
+
+#copyright {
+	font-style: none;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	font-style: none;
+	line-height: 1.2em;
+	letter-spacing: .2px;
 }
 
 .avatar {
@@ -383,6 +497,41 @@ iframe {
 	border-radius: 50%;
 }
 
+#footer {
+	font-style: none;
+	border: double;
+	text-align: center;
+	margin: 2px;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+}
+
+.footerlist {
+	font-size: 1.1em;
+	letter-spacing: 2px;
+	word-spacing: 30px;
+}
+
+.toppage {
+	font-size: 1em;
+	text-align: right;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-right: 11px;
+}
+
+
+#user-name {
+	border: double;
+	height: 25px;
+	border-radius: 0em;
+}
+
+
+.blockquote {
+	text-align: justify;
+}
+
 /* mouse over link*/
 
 a:hover,
@@ -390,13 +539,12 @@ a:active {
 	background-color: 0px;
 }
 
-
 a:active {}
 
 
 a {
 	text-transform: capitalize;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 div {
@@ -420,10 +568,10 @@ video {
 /* Add a black background color to the top navigation */
 
 .topnav {
-	font-family: 'Russo One', sans-serif;
 	font-style: none;
 	overflow: hidden;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
+	margin-top: 20px;
 
 }
 
@@ -447,15 +595,15 @@ video {
 	text-align: center;
 	border-style: double;
 	border-radius: 20px;
+
 }
 
 .topnav a {
-
 	display: block;
 	padding: 12px 15px;
 	text-decoration: none;
 	font-size: 30px;
-	font-weight: 100;
+
 }
 
 /* Change the color of links on hover */
@@ -506,16 +654,12 @@ This class makes the topnav look good on small screens (display the links vertic
 	}
 
 	@media only screen and (max-width: 414px) {
-		.boxflex {
-			background-color: var(--accent-one);
-		}
+		.boxflex {}
 
 	}
 
 	@media only screen and (max-width: 600px) {
-		.boxflex2 {
-			background-color: var(--accent-two);
-		}
+		.boxflex2 {}
 
 	}
 
