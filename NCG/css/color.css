@@ -1,12 +1,10 @@
 /*
 	color scheme V-Professional
-	Black Grey and White
+	Black Grey and White (Monochromatic Colors)
 */
 
-
-
 :root {
-	--main-color: antiquewhite;
+	--main-color: #FAEBD7;
 	--complement: #E6E6E6;
 	--accent-one: #808080;
 	--accent-two: #CFCFCF;
@@ -14,16 +12,13 @@
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
 
-
-
 }
 
-*
+
 /*
 	color scheme IV-Cotton Candy
-	lightblue pink grey
+	lightblue pink grey (Triad Colors)
 */
-
 
 
 :root {
@@ -35,14 +30,12 @@
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
 
-
-
 }
 
-
+*
 /*
 	Color Scheme III-Purple Flame
-	Orange Purple Black White
+	Orange Purple Black White (Secondary Complementary Colors)
 */
 
 :root {
@@ -54,14 +47,12 @@
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
 
-
-
 }
 
 
 /*
 	Color Scheme II-Leaf and Log
-	Teal Lightgreen wood
+	Teal Lightgreen wood (Tertiary color)
 */
 
 :root {
@@ -73,12 +64,12 @@
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
 
-}
+}*
 
-*
+
 /* 
 	Color Scheme I
-    Gold and Silver
+    Gold and Silver (Analogous Colors)
 	
 */
 
@@ -90,7 +81,6 @@
 	--accent-three: #000000;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
-
 
 }
 
@@ -113,8 +103,6 @@ acronym {
 	color: var(--complement);
 
 }
-
-
 
 i {
 	color: var(--accent-one);
@@ -149,9 +137,8 @@ input {
 
 }
 
-
 button {
-	color: var(--accent-two);
+	color: var(--complement);
 }
 
 #logo a {
@@ -162,8 +149,8 @@ button {
 a {
 	color: var(--complement);
 	text-shadow: -1px 0 var(--accent-three),
-		1px 0 var(--accent-one),
-		1px 0 var(--accent-two),
+		.5px 0 var(--accent-one),
+		.5px 0 var(--accent-two),
 		0 -1px var(--main-color);
 }
 
@@ -171,6 +158,9 @@ a {
 	background-color: var(--accent-two);
 }
 
+.bonus {
+	color: var(--text-color);
+}
 
 h1,
 h2,
@@ -179,6 +169,19 @@ h4 {
 	color: var(--accent-one);
 }
 
+.glow {
+	color: var(--accent-one);
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px var(--main-color), 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+
+	to {
+		text-shadow: 0 0 20px var(--accent-three), 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+}
 
 #copyright {
 	color: var(--main-color);
@@ -191,7 +194,6 @@ figcaption img {
 figcaption,
 #reviewlogo {
 	text-shadow: -1px 0 var(--complement), 0 .2px var(--accent-two), .2px 0 var(--main-color), 0 -1px var(--accent-three);
-
 
 }
 
@@ -218,8 +220,7 @@ h3 {
 	text-shadow: -1px 0 var(--accent-three), 0 .2px var(--accent-two), .1px 0 var(--accent-one), 0 -1px var(--main-color);
 }
 
-.new,
-.table {
+.new {
 	color: var(--main-color);
 }
 
@@ -231,7 +232,6 @@ p.three {
 textarea {
 	color: var(--complement);
 	border-color: var(--accent-two);
-	text-align: center;
 }
 
 #login-message,
@@ -239,16 +239,53 @@ textarea {
 	color: indianred;
 }
 
-
-
 #user-name {
 	color: var(--main-color);
 	background-color: var(--accent-three);
 
 }
 
-#image-file {}
-    
-#write-post{
-    border-color: var(--complement);
+#write-post {
+	border-color: var(--complement);
+}
+
+
+tr:nth-child(even) {
+	background-color: var (--accent-one);
+}
+
+.post {
+	background-color: var(--accent-three);
+}
+
+.post .author {
+	color: var(--accent-two);
+}
+
+.post .date::before {
+	content: " on ";
+	color: var(--main-color);
+}
+
+.post .author {
+	color: var(--accent-two);
+}
+
+.post .date::before {
+	content: " on ";
+	color: var(--main-color);
+}
+
+@media only screen and (max-width: 414px) {
+	.boxflex {
+		background-color: var(--accent-three);
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.boxflex2 {
+		background-color: var(--accent-three);
+	}
+
 }

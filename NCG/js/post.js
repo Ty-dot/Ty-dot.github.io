@@ -5,21 +5,18 @@ const profileName = document.getElementById('profile-name');
 const bioInput = document.getElementById('bio');
 const updateButton = document.getElementById('update-profile');
 
-userRef.on('value', function(snapshot) {
-	const userInfo = snapshot.val();
-	profileName.value = userInfo.displayName;
-	
-	if (userInfo.bio) {
-		bioInput.value = userInfo.bio;
-	}
+userRef.on('value', function (snapshot) {
+    const userInfo = snapshot.val();
+    profileName.value = userInfo.displayName;
+
+    if (userInfo.bio) {
+        bioInput.value = userInfo.bio;
+    }
 });
 
-updateButton.onclick = function() {
-	userRef.update({
-		displayName: profileName.value,
-		bio: bioInput.value
-	});
+updateButton.onclick = function () {
+    userRef.update({
+        displayName: profileName.value,
+        bio: bioInput.value
+    });
 };
-
-
-

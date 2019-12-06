@@ -1,0 +1,25 @@
+#users {
+    padding: 1em;
+    font-family: var(--text-font);
+
+}
+
+.user {
+    border: 1px solid var(--accent-one);
+    margin: 0.5em 0;
+    padding: 1em;
+}
+
+.user .name {
+    font-size: 1.5em;
+}
+
+.user .bio {
+    font-family: var(--text-font);
+}
+
+.user img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
