@@ -18,8 +18,8 @@
 	}
 
 	#profile {
-		grid-column: 1;
-		grid-row: 2/ span 1;
+		grid-column: 3;
+		grid-row: 1/ span 1;
 	}
 
 	#login,
@@ -29,13 +29,13 @@
 	}
 
 	#create {
-		grid-column: 1 / span 1;
-		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+		grid-row: 2 / span 1;
 	}
 
 	#sidebar {
 		grid-column: 1;
-		grid-row: 3 / span 1;
+		grid-row: 1 / span 1;
 	}
 
 	#footer {
@@ -71,13 +71,13 @@
 	}
 
 	#main {
-		grid-column: 1;
-		grid-row: 1/ span 1;
+		grid-column: 2;
+		grid-row: 2/ span 1;
 	}
 
 	#profile {
-		grid-column: 1/ span 1;
-		grid-row: 2 / span 1;
+		grid-column: 3 / span 1;
+		grid-row: 1 / span 1;
 	}
 
 	#login,
@@ -87,13 +87,13 @@
 	}
 
 	#create {
-		grid-column: 1 / span 1;
-		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+		grid-row: 3 / span 1;
 	}
 
 	#sidebar {
 		grid-column: 1;
-		grid-row: 3 / span 1;
+		grid-row: 2 / span 1;
 	}
 
 	#footer {
@@ -101,18 +101,20 @@
 		grid-row: 4 / span 2;
 	}
 
-	.boxflex {
+	/*Flexboxes*/
+
+	.boxflex6 {
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		max-height: 400vh;
 		min-width: 400vm;
-		align-items: center;
+		align-items: left;
 		border: 5px double;
-		padding-top: 10px;
-		margin: 25px;
+		margin: 20px;
 	}
 
+	.boxflex,
 	.boxflex2 {
 		display: flex;
 		flex-direction: column;
@@ -121,50 +123,59 @@
 		max-height: 400vh;
 		min-width: 400vm;
 		border: 5px double;
-		margin: 25px;
+		margin: 20px;
 
 	}
 
 	.boxflex4 {
-		margin-left: 5em;
-		margin-right: 5em;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		max-height: 400vh;
+		min-width: 400vm;
+		border: 5px double;
+		padding-bottom: 15px;
 	}
 
-	.boxflex3,
+
+	p,
 	p.one,
 	p.two,
 	p.three,
 	p.four,
 	.disclaimer,
 	.table,
-	.update {
-		margin: 25px;
+	update {
+		margin: 20px;
 	}
 
 	.boxflex5,
+	.boxflex3,
 	.logo,
 	.map {
-		margin: 25px;
+		margin: 20px;
 	}
 
 	.quote {
-		margin-top: 2px;
+		margin-top: 5px;
 	}
 
 	.boxflex2 li {
-		margin-right: 25px;
+		margin-right: 20px;
 	}
 
-	.main p.table,
+	.main,
+	p.table,
 	p.table2,
 	p.table3,
 	p.table4,
 	p.table5 {
-		margin: 25px;
+		margin: 20px;
 	}
 
 	.publisher {
-		margin: 30px;
+		margin: 20px;
 	}
 
 	.giphy,
@@ -173,12 +184,15 @@
 		margin-right: 28%;
 	}
 
-	.create {
-		margin: 25px;
+	.create,
+	.write-post {
+		margin: 20px;
 	}
 
 	figcaption {
-		margin: 10%;
+		padding-left: 25%;
+		padding-right: 25%;
+
 	}
 
 	/* create account  */

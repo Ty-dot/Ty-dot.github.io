@@ -10,7 +10,6 @@
 	<link href="style.css" rel="stylesheet" type="text/css" "media screen">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
@@ -34,7 +33,6 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		//		firebase.analytics();
-
 	</script>
 </head>
 
@@ -55,28 +53,22 @@
 					<div class="update">
 
 						<h1>Profile Page</h1>
-                        <div id="add-image">
-                        	<img id="edit-profile-image">
+						<div id="add-image">
+							<img id="edit-profile-image">
 							<p>Upload or Change Your User Profile Image:</p>
 
 							<p><input id="image-file" type="file" accept="image/png, image/gif, image/jpeg"></p>
 							<button id="submit-image">Upload Image</button>
 						</div>
-                            <p>Try adding some extra information!</p>
-						
+						<p>Try adding some extra information!</p>
+
 						<p> <input id="profile-name" placeholder="Username">
 							<input id="color" placeholder="Favorite Color">
 							<input id="age" placeholder="Age"></p>
 
 						<p> <textarea id="bio" placeholder="Add your bio here. It can be anything!"></textarea></p>
-                        
-                        	
-
 
 						<p> <button id="update-profile">Update Profile</button></p>
-
-					
-
 
 						<p class="form">
 							<form action="http:// www.example.com/profile.php">
@@ -133,55 +125,56 @@
 			</div>
 		</div>
 
-		<profile>
-			<div id="profile">
-				<main class="boxflex3">
+		<main class="boxflex3">
+			<profile>
+				<div id="profile">
 					<div class="profileimg">
 
 						<img id='edit-profile-image' src="images/default.png" alt="new" width="200" height="200">
 					</div>
-					
+
 					<div class="pbutton">
 						<button id="edit-profile">Edit Profile</button></div>
-						
+
 					<div id="user-info">
 						<p id="user-name"></p>
 						<button id="logout-button">Logout</button>
 					</div>
-				</main>
 
-				<div id="login">
-					<input id="email" placeholder="Email">
-					<input id="password" placeholder="Password" type="password">
-					<button id="login-button">Login</button>
+					<div id="login">
+						<input id="email" placeholder="Email">
+						<input id="password" placeholder="Password" type="password">
+						<button id="login-button">Login</button>
 
-					<p id="login-message"></p>
+						<p id="login-message"></p>
+					</div>
+
+					<div class="new"><a href="posts.html">Postboard</a></div>
+					<div class="new"><a href="create.html">Create new account</a></div>
+
+					<main class="boxflex4">
+						<nav class="topnav" id="myTopnav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="security.html">Security</a></li>
+								<li><a href="reviews.html">Reviews</a></li>
+								<li><a href="write.html">Write-Up</a></li>
+								<li><a href="support.html">Support</a></li>
+								<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+							</ul>
+						</nav>
+					</main>
+
+					<div class="new"><a href="users.html">Users</a></div>
+
+
+					<p class="giphy">
+						<img src="Inuse/mk.gif" alt="party" width="0" height="0"></p>
 				</div>
+			</profile>
+		</main>
 
-				<div class="new"><a href="posts.html">Postboard</a></div>
-				<div class="new"><a href="create.html">Create new account</a></div>
-
-				<main class="boxflex4">
-					<nav class="topnav" id="myTopnav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="security.html">Security</a></li>
-							<li><a href="reviews.html">Reviews</a></li>
-							<li><a href="write.html">Write-Up</a></li>
-							<li><a href="support.html">Support</a></li>
-							<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-						</ul>
-					</nav>
-				</main>
-
-				<div class="new"><a href="users.html">Users</a></div>
-
-
-				<p class="giphy">
-					<img src="Inuse/mk.gif" alt="party" width="0" height="0"></p>
-			</div>
-		</profile>
 
 		<div id="sidebar">
 
@@ -216,12 +209,14 @@
 				</ul>
 			</main>
 
-			<div class="map">
-				<div class="mapWrapper">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<main class="boxflex6">
+				<div class="map">
+					<div class="mapWrapper">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+					<!-- end .mapWrapper-->
 				</div>
-				<!-- end .mapWrapper-->
-			</div>
+			</main>
 
 			<div class="paypal">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -260,13 +255,10 @@
 							x.className = "topnav";
 						}
 					}
-
 				</script>
 			</div>
 		</footer>
 	</div>
 	<script src="js/auth.js"></script>
 	<script src="js/profile.js"></script>
-</body>
-
-</html>
+</body></html>

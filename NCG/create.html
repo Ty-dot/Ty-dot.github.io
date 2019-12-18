@@ -9,7 +9,6 @@
 
 	<link href="style.css" rel="stylesheet" type="text/css" "media screen">
 
-
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
@@ -45,12 +44,11 @@
 				</div>
 			</main>
 
-			<div id="main">
-				<main class="boxflex2">
-					<img src="https://www.wallpaperup.com/uploads/wallpapers/2013/05/13/85396/d59cc4155e380e462f25a9b66524aba3.jpg" alt="team"></main>
+			<main class="boxflex2">
+				<div id="main">
+					<img src="https://www.wallpaperup.com/uploads/wallpapers/2013/05/13/85396/d59cc4155e380e462f25a9b66524aba3.jpg" alt="team">
 
-				<div id="create">
-					<main class="boxflex2">
+					<div id="create">
 						<!-- create user -->
 						<h1>Create a new account</h1>
 						<input id="username" placeholder="Username">
@@ -59,45 +57,47 @@
 						<button id="create-button">Create</button>
 						<p id="error-message"></p>
 						<p>Want to know which type of passwords shouldn't be used? <a href="users.html"> click here!</a></p>
-					</main>
+
+					</div>
 				</div>
-			</div>
+			</main>
 		</div>
 
-		<profile>
-			<div id="profile">
-				
-						<p class="giphy">
-					<img src=Inuse/circle.gif alt="green" width="0" height="0"></p>
-				
-						
+		<main class="boxflex3">
+			<profile>
+				<div id="profile">
+
+					<img src="Inuse/cubepurp.gif" alt="man" width="200" height="200">
+
 					<div id="user-info">
 						<p id="user-name"></p>
 						<button id="logout-button">Logout</button>
 					</div>
-				</main>
 
-				<div class="new"><a href="posts.html">Postboard</a></div>
-				<div class="new"><a href="create.html">Create new account</a></div>
 
-				<main class="boxflex4">
-					<nav class="topnav" id="myTopnav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="security.html">Security</a></li>
-							<li><a href="reviews.html">Reviews</a></li>
-							<li><a href="write.html">Write-Up</a></li>
-							<li><a href="support.html">Support</a></li>
-							<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-						</ul>
-					</nav>
-				</main>
-				<div class="new"><a href="users.html">Users</a></div>
+					<div class="new"><a href="posts.html">Postboard</a></div>
+					<div class="new"><a href="create.html">Create new account</a></div>
 
-			
-			</div>
-		</profile>
+					<main class="boxflex4">
+						<nav class="topnav" id="myTopnav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="security.html">Security</a></li>
+								<li><a href="reviews.html">Reviews</a></li>
+								<li><a href="write.html">Write-Up</a></li>
+								<li><a href="support.html">Support</a></li>
+								<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+							</ul>
+						</nav>
+					</main>
+					<div class="new"><a href="users.html">Users</a></div>
+					<p class="giphy">
+						<img src=Inuse/circle.gif alt="green" width="0" height="0"></p>
+
+				</div>
+			</profile>
+		</main>
 
 		<div id="sidebar">
 			<main class="boxflex5">
@@ -132,12 +132,16 @@
 				</ul>
 			</main>
 
-			<div class="map">
-				<div class="mapWrapper">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<main class="boxflex6">
+				<div class="map">
+					<div class="mapWrapper">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+					<!-- end .mapWrapper-->
 				</div>
-				<!-- end .mapWrapper-->
-			</div>
+			</main>
+
+
 			<div class="paypal">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 					<input type="hidden" name="cmd" value="_donations" />

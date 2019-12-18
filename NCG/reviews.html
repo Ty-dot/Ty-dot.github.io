@@ -32,6 +32,7 @@
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
 		//		firebase.analytics();
+
 	</script>
 </head>
 
@@ -64,7 +65,6 @@
 
 						The secondary protagonist, <strong>Goro Majima</strong> (right) was a former Yakuza member himself. He was kicked out of the Yakuza and tortured because he chose to disobey his captain, Shimano's orders due to his brother being ambushed. The captain liked and didn't want to kill Majima, so he was made as the manager of a club called Grand, where they can keep him close. He had a reputation for his hospitable, "customer is always right" mentality. Majima wants to rejoin the family, and he'll do whatever it takes to accomplish that... or so he thought.
 					</p>
-
 
 
 					<p class="four">
@@ -101,51 +101,54 @@
 				</main>
 			</div>
 		</div>
+
 		<main class="boxflex3">
-			<div id="profile">
-				<div class="profileimg">
-					<img id='edit-profile-image' src="images/default.png" alt="new" width="200" height="200">
+			<profile>
+				<div id="profile">
+					<div class="profileimg">
+						<img id='edit-profile-image' src="images/default.png" alt="new" width="200" height="200">
+					</div>
+
+					<div class="pbutton">
+						<button id="edit-profile">Edit Profile</button>
+					</div>
+
+					<div id="user-info">
+						<p id="user-name"></p>
+						<button id="logout-button">Logout</button>
+					</div>
+
+					<div id="login">
+						<input id="email" placeholder="Email">
+						<input id="password" placeholder="Password" type="password">
+						<button id="login-button">Login</button>
+
+						<p id="login-message"></p>
+					</div>
+
+
+					<div class="new"><a href="posts.html">Postboard</a></div>
+					<div class="new"><a href="create.html">Create new account</a></div>
+
+					<main class="boxflex4">
+						<nav class="topnav" id="myTopnav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="security.html">Security</a></li>
+								<li><a href="reviews.html">Reviews</a></li>
+								<li><a href="write.html">Write-Up</a></li>
+								<li><a href="support.html">Support</a></li>
+								<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+							</ul>
+						</nav>
+					</main>
+					<div class="new"><a href="users.html">Users</a></div>
+
+					<p class="giphy">
+						<img src="https://thumbs.gfycat.com/RectangularTotalBilby-small.gif" alt="battery" width="0" height="0"></p>
 				</div>
-
-				<div class="pbutton">
-                   <button id="edit-profile">Edit Profile</button>
-                </div>
-
-				<div id="user-info">
-					<p id="user-name"></p>
-					<button id="logout-button">Logout</button>
-				</div>
-
-				<div id="login">
-					<input id="email" placeholder="Email">
-					<input id="password" placeholder="Password" type="password">
-					<button id="login-button">Login</button>
-
-					<p id="login-message"></p>
-				</div>
-
-
-				<div class="new"><a href="posts.html">Postboard</a></div>
-				<div class="new"><a href="create.html">Create new account</a></div>
-
-				<main class="boxflex4">
-					<nav class="topnav" id="myTopnav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="security.html">Security</a></li>
-							<li><a href="reviews.html">Reviews</a></li>
-							<li><a href="write.html">Write-Up</a></li>
-							<li><a href="support.html">Support</a></li>
-							<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-						</ul>
-					</nav>
-				</main>
-				<div class="new"><a href="users.html">Users</a></div>
-
-				<p class="giphy">
-					<img src="https://thumbs.gfycat.com/RectangularTotalBilby-small.gif" alt="battery" width="0" height="0"></p>
-			</div>
+			</profile>
 		</main>
 
 		<div id="sidebar">
@@ -179,12 +182,16 @@
 				</ul>
 			</main>
 
-			<div class="map">
-				<div class="mapWrapper">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<main class="boxflex6">
+				<div class="map">
+					<div class="mapWrapper">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.4253069517745!2d-74.01081685135135!3d40.71333493574004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a194febc653%3A0xb5ae538e650b5e69!2sFiterman%20Hall!5e0!3m2!1sen!2sus!4v1570928158791!5m2!1sen!2sus" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+					<!-- end .mapWrapper-->
 				</div>
-				<!-- end .mapWrapper-->
-			</div>
+			</main>
+
+
 			<div class="paypal">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 					<input type="hidden" name="cmd" value="_donations" />
@@ -224,10 +231,13 @@
 						x.className = "topnav";
 					}
 				}
+
 			</script>
 
 		</div>
 	</footer>
 	<script src="js/auth.js"></script>
 
-</body></html>
+</body>
+
+</html>

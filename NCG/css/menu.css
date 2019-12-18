@@ -226,7 +226,6 @@ review {
 }
 
 .quote {
-	border: double;
 	text-align: center;
 	margin-top: 20px;
 	padding-bottom: 20px;
@@ -234,13 +233,12 @@ review {
 	padding-left: 3px;
 	padding-right: 3px;
 	line-height: 1.5em;
-	font-size: 1.1em;
 	margin-bottom: 20px;
+
 }
 
 #sidebar {
 	font-size: 1.1em;
-
 }
 
 .checkout {
@@ -253,10 +251,7 @@ review {
 	padding-top: 1px;
 }
 
-.giphy {
-	
-}
-
+.giphy {}
 
 tr:nth-child(even) {}
 
@@ -376,7 +371,11 @@ th {
 	padding-bottom: 15px;
 
 }
-#publish {align-items: center;}
+
+#publish {
+	align-items: center;
+}
+
 textarea {
 	text-align: center;
 }
@@ -473,7 +472,6 @@ form {
 
 
 .linkedList {
-	border: double;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	letter-spacing: .2px;
@@ -535,12 +533,7 @@ form {
 /* mouse over link*/
 
 a:hover,
-a:active {
-	background-color: 0px;
-}
-
 a:active {}
-
 
 a {
 	text-transform: capitalize;

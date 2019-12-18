@@ -11,7 +11,6 @@
 	--accent-three: #000000;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
-
 }
 
 
@@ -29,10 +28,9 @@
 	--accent-three: #424040;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
-
 }
 
-*
+
 /*
 	Color Scheme III-Purple Flame
 	Orange Purple Black White (Secondary Complementary Colors)
@@ -46,7 +44,6 @@
 	--accent-three: #1F1F1F;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
-
 }
 
 
@@ -63,7 +60,6 @@
 	--accent-three: #000000;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
-
 }*
 
 
@@ -81,10 +77,9 @@
 	--accent-three: #000000;
 	--text-color: var(--accent-two);
 	--main-bg-color: var(--accent-three);
-
 }
 
-* * {
+* {
 	color: var(--text-color);
 	background-color: var(--main-bg-color);
 }
@@ -101,12 +96,10 @@ small,
 cite,
 acronym {
 	color: var(--complement);
-
 }
 
 i {
 	color: var(--accent-one);
-
 }
 
 .topnav a {
@@ -114,12 +107,96 @@ i {
 }
 
 .topnav li {
-	background-color: var(--main-color);
+	border-color: var(--main-color);
+	background-color: var(--complement);
 }
 
 .topnav a:hover {
-
 	color: var(--main-color);
+}
+
+#logo a {
+	text-shadow: -2px 0 var(--main-color), 0 2px #E8E8E8, 0 1px var(--accent-one), 0 -1px #424040;
+}
+
+a {
+	color: var(--complement);
+	text-shadow: -1px 0 var(--accent-three),
+		.5px 0 var(--accent-one),
+		.5px 0 var(--accent-two),
+		0 -1px var(--main-color);
+}
+
+a:hover,
+a:active {}
+
+a:hover,
+a:active {
+	color: var(--main-color);
+}
+
+button {
+	color: var(--complement);
+}
+
+button:hover,
+button:active {
+	color: var(--main-color);
+	border-color: var(--complement);
+}
+
+.linkedList {
+	border: double;
+	border-color: var(--main-color);
+}
+
+.quote {
+	border: double;
+	border-color: var(--main-color);
+}
+
+span.highlight {
+	background-color: var(--main-color);
+	color: var(--accent-three);
+}
+
+#social {
+	background-color: var(--accent-two);
+}
+
+.bonus {
+	color: var(--text-color);
+}
+
+p.three {
+	text-shadow: 0px .5px 0px var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--accent-one);
+}
+
+h1,
+h2,
+h3 {
+	text-shadow: -1px 0 var(--accent-three), 0 .2px var(--accent-two), .1px 0 var(--accent-one), 0 -1px var(--main-color);
+}
+
+.glow {
+	color: var(--accent-one);
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px var(--main-color), 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+
+	to {
+		text-shadow: 0 0 20px var(--accent-three), 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
 }
 
 #login,
@@ -137,52 +214,6 @@ input {
 
 }
 
-button {
-	color: var(--complement);
-}
-
-#logo a {
-	text-shadow: -2px 0 var(--main-color), 0 2px #E8E8E8, 0 1px var(--accent-one), 0 -1px #424040;
-}
-
-
-a {
-	color: var(--complement);
-	text-shadow: -1px 0 var(--accent-three),
-		.5px 0 var(--accent-one),
-		.5px 0 var(--accent-two),
-		0 -1px var(--main-color);
-}
-
-#social {
-	background-color: var(--accent-two);
-}
-
-.bonus {
-	color: var(--text-color);
-}
-
-h1,
-h2,
-h3,
-h4 {
-	color: var(--accent-one);
-}
-
-.glow {
-	color: var(--accent-one);
-}
-
-@-webkit-keyframes glow {
-	from {
-		text-shadow: 0 0 10px var(--main-color), 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-	}
-
-	to {
-		text-shadow: 0 0 20px var(--accent-three), 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-	}
-}
-
 #copyright {
 	color: var(--main-color);
 }
@@ -194,40 +225,11 @@ figcaption img {
 figcaption,
 #reviewlogo {
 	text-shadow: -1px 0 var(--complement), 0 .2px var(--accent-two), .2px 0 var(--main-color), 0 -1px var(--accent-three);
-
-}
-
-a:hover,
-a:active {
-	color: var(--main-color);
-}
-
-button:hover,
-button:active {
-
-	color: var(--main-color);
-	border-color: var(--complement);
-}
-
-span.highlight {
-	background-color: var(--main-color);
-	color: var(--accent-three);
-}
-
-h1,
-h2,
-h3 {
-	text-shadow: -1px 0 var(--accent-three), 0 .2px var(--accent-two), .1px 0 var(--accent-one), 0 -1px var(--main-color);
 }
 
 .new {
 	color: var(--main-color);
 }
-
-p.three {
-	text-shadow: 0px .5px 0px var(--main-color);
-}
-
 
 textarea {
 	color: var(--complement);
@@ -242,13 +244,11 @@ textarea {
 #user-name {
 	color: var(--main-color);
 	background-color: var(--accent-three);
-
 }
 
 #write-post {
 	border-color: var(--complement);
 }
-
 
 tr:nth-child(even) {
 	background-color: var (--accent-one);
